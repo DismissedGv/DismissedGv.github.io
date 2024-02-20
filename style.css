@@ -28,8 +28,14 @@ nav{
     flex-wrap: wrap;
 }
 .logo{
-    width: 140px;
-    margin-right: 100px;
+    font-size: 50px;
+    margin-top: 5px;
+    position: absolute;
+    color: #F0C46A;
+}
+.logo i{ 
+    size: 100px;
+    padding-right: 3px;
 }
 nav ul li{
     display: inline-block;
@@ -81,6 +87,7 @@ nav ul li a:hover::after{
     width: 5px;
     border-radius: 10px;
     margin-left: 10px;
+    margin-top: -100px;
 }
 /* --------------about------------- */
 #about{
@@ -161,11 +168,12 @@ nav ul li a:hover::after{
 }
 /* --------------skills------------- */
 #skills{
-    padding: 30px 0;
+    padding: 0px 0;
 }
 .skills-list{
     display: grid;
-    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    grid-template-columns: auto auto auto auto;
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -354,6 +362,7 @@ form .btn2{
     background: #262626;
     font-weight: 300;
     margin-top: 20px;
+    font-size: 10px;
 }
 .copyright i{
     color: #F0C46A;
