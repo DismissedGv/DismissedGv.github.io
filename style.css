@@ -22,10 +22,14 @@ body{
     padding: 10px 20%;
 }
 nav{
+    border: 3px solid #252525;
+    border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
+    margin-left: 330px;
+    margin-right: 330px;
 }
 .logo{
     font-size: 50px;
