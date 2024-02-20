@@ -1,14 +1,14 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
 }
 html{
     scroll-behavior: smooth;
 }
 body{
-    background: #080808;
+    background: #1d1d1f;
     color: #fff;
 }
 #header{
@@ -19,24 +19,25 @@ body{
     background-position: center;
 }
 .container{
-    padding: 10px 10%;
+    padding: 10px 20%;
 }
 nav{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .logo{
     width: 140px;
+    margin-right: 100px;
 }
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 10px 20px;
+    margin: 20px 15px;
 }
 nav ul li a{
-    color: #fff;
+    color: #ababab;
     text-decoration: none;
     font-size: 18px;
     position: relative;
@@ -45,7 +46,7 @@ nav ul li a::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #033A9A;
+    background: #F0C46A;
     position: absolute;
     left: 0;
     bottom: -6px;
@@ -60,11 +61,26 @@ nav ul li a:hover::after{
     font-size: 30px;
 }
 .header-text h1{
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 20px;
+    color: #f7f7f7;
 }
 .header-text h1 span{
-    color: #033A9A;
+    font-size: 60px;
+    color: #F0C46A;
+}
+.header-text p{
+    margin-top: 10px;
+    color: #ababab;
+    font-size: 40px;
+}
+.line{
+    border: 1px solid #F0C46A;
+    background-color: #F0C46A;
+    height: 100px;
+    width: 5px;
+    border-radius: 10px;
+    margin-left: 10px;
 }
 /* --------------about------------- */
 #about{
@@ -94,6 +110,12 @@ nav ul li a:hover::after{
     font-weight: 600;
     color: #fff;
 }
+.sub-title-2{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+    margin-left: 40%;
+}
 
 .tab-titles{
     display: flex;
@@ -111,7 +133,7 @@ nav ul li a:hover::after{
     content: '';
     width: 0;
     height: 3px;
-    background: #033A9A;
+    background: #F0C46A;
     position: absolute;
     left: 0;
     bottom: -8px;
@@ -127,51 +149,55 @@ nav ul li a:hover::after{
     margin: 10px 0;
 }
 .tab-contents ul li span{
-    color: #033A9A;
-    font-size: 14px;
+    color: #F0C46A;
+    font-size: 20px;
 }
 .tab-contents{
     display: none;
+    font-size: 25px;
 }
 .tab-contents.active-tab{
     display: block;
 }
-/* --------------services------------- */
-#services{
+/* --------------skills------------- */
+#skills{
     padding: 30px 0;
 }
-.services-list{
+.skills-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(4, auto);
     grid-gap: 40px;
     margin-top: 50px;
 }
-.services-list div{
-    background: #262626;
+.skills-list div{
+    background: #252423;
+    width: 250px;
+    height: 200px;
     padding: 40px;
+    text-align: center;
     font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
-.services-list div i{
+.skills-list div i{
     font-size: 50px;
     margin-bottom: 30px;
 }
-.services-list div h2{
+.skills-list div h2{
     font-size: 30px;
     font-weight: 500;
     margin-bottom: 15px;
 }
-.services-list div a{
+.skills-list div a{
     text-decoration: none;
     color: #fff;
     font-size: 12px;
     margin-top: 20px;
     display: inline-block;
 }
-.services-list div:hover{
-    background: #033A9A;
+.skills-list div:hover{
+    background: #F0C46A;
     transform: translateY(-10px);
 }
 /* --------------portfolio------------- */
@@ -198,7 +224,7 @@ nav ul li a:hover::after{
 .layer{
     width: 100%;
     height: 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), #033A9A);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), #19191a);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -219,7 +245,7 @@ nav ul li a:hover::after{
 }
 .layer a{
     margin-top: 20px;
-    color: #033A9A;
+    color: #F0C46A;
     text-decoration: none;
     font-size: 18px;
     line-height: 60px;
@@ -239,15 +265,16 @@ nav ul li a:hover::after{
     display: block;
     margin: 50px auto;
     width: fit-content;
-    border: 1px solid #033A9A;
+    border: 1px solid #F0C46A;
     padding: 14px 50px;
     border-radius: 6px;
     text-decoration: none;
-    color: #fff;
-    transition: background 0.5s;
+    color: #F0C46A;
+    transition: background 0.3s;
 }
 .btn:hover{
-    background: #033A9A;
+    background: #F0C46A;
+    color: white;
 }
 /* --------------contact------------- */
 .contact-left{
@@ -257,7 +284,7 @@ nav ul li a:hover::after{
     margin-top: 30px;
 }
 .contact-left p i{
-    color: #033A9A;
+    color: #F0C46A;
     margin-right: 15px;
     font-size: 25px;
 }
@@ -268,7 +295,12 @@ nav ul li a:hover::after{
 .contact-right form{
     width: 100%;
 }
-
+#social-icons-2{
+    margin-left: 100%;
+}
+#social-icons-2 a{
+    margin-bottom: 5px;
+}
 .social-icons{
     margin-top: 30px;
 }
@@ -281,13 +313,20 @@ nav ul li a:hover::after{
     transition: transform 0.5s;
 }
 .social-icons a:hover{
-    color: #033A9A;
+    color: #F0C46A;
     transform: translateY(-5px);
 }
 
 .btn.btn2{
     display: inline-block;
-    background: #033A9A;
+    background: #F0C46A;
+    color: white;
+}
+.btn.btn3{
+    display: inline-block;
+    padding: 10px 30px;
+    color: #F0C46A;
+    border: 3px solid #F0C46A;
 }
 
 form input, form textarea{
@@ -317,7 +356,7 @@ form .btn2{
     margin-top: 20px;
 }
 .copyright i{
-    color: #033A9A;
+    color: #F0C46A;
 }
 /* --------------css fir small screens------------- */
 nav .fa-solid{
@@ -339,7 +378,7 @@ nav .fa-solid{
         font-size: 25px;
     }
     nav ul{
-        background: #033A9A;
+        background: #F0C46A;
         position: fixed;
         top: 0;
         right: -200px;
