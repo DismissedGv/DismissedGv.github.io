@@ -10,20 +10,22 @@
     <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="header">
+<section id="header">
     <div class="container">
         <div class="logo"><i class="fa-solid fa-s"></i><i class="fa-solid fa-k"></i></div>
-        <nav>
-            <ul id="sidemenu">
-                <li><a href="#header">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-            </ul>
-            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-        </nav>
+        <header>
+            <nav>
+                <ul id="sidemenu">
+                    <a class="tab-links active-link" href="#header" onclick="opentab('')">Home</a>                   
+                    <a class="tab-links" href="#about" onclick="opentab('')">About</a>
+                    <a class="tab-links" href="#skills" onclick="opentab('')">Skills</a>
+                    <a class="tab-links" href="#portfolio" onclick="opentab('')">Portfolio</a>
+                    <a class="tab-links" href="#contact" onclick="opentab('')">Contact</a>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </header>
         <div class="header-text">
             <h1>I'm <span>Sinan Koc</span></h1>
             <p>Game Developer & <br>Programmer</p>
@@ -37,9 +39,9 @@
             <br><a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
         </div>
     </div>
-</div>
+</section>
 <!----------------about---------------->
-<div id="about">
+<section id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
@@ -79,9 +81,9 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!----------------Skills---------------->
-<div id="skills">
+<section id="skills">
     <div class="container">
         <h1 class="sub-title-2">My Skills</h1>
         <div class="skills-list">
@@ -127,9 +129,9 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 <!----------------portfolio---------------->
-<div id="portfolio">
+<section id="portfolio">
     <div class="container">
         <h1 class="sub-title-2">My Work</h1>
         <div class="work-list">
@@ -160,9 +162,9 @@
         </div>
         <a href="#" class="btn">See more</a>
     </div>
-</div>
+</section>
 <!----------------contact---------------->
-<div id="contact">
+<section id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -191,39 +193,9 @@
     <div class="copyright">
         <p>Copyright <i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
     </div>
-</div>
-<!----------------script---------------->
-<script>
+</section>
 
-    var tablinks = document.getElementsByClassName("tab-links");
-    var tabcontents = document.getElementsByClassName("tab-contents");
+<script src="script.js"></script>
 
-    function opentab(tabname)
-    {
-        for(tablink of tablinks)
-        {
-            tablink.classList.remove("active-link");
-        }
-        for(tabcontent of tabcontents)
-        {
-            tabcontent.classList.remove("active-tab");
-        }
-
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-    }
-
-    var sidemenu = document.getElementById("sidemenu");
-
-    function openmenu()
-    {
-        sidemenu.style.right = "0px";
-    }
-    function closemenu()
-    {
-        sidemenu.style.right = "-200px";
-    }
-</script>
-    
 </body>
 </html>
