@@ -32,7 +32,7 @@ var tablinks = document.getElementsByClassName("tab-links");
 //-----------------------------------------------------------------Navigation bar
 
     let sections = document.querySelectorAll('section');
-    let navLinks = document.querySelectorAll('nav ul a');
+    let navLinks = document.querySelectorAll('header nav ul a');
 
     window.onscroll = () => {
         let top = window.scrollY;

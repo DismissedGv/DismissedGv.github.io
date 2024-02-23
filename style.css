@@ -16,6 +16,17 @@ body{
     background-size: cover;
     background-position: center;
 }
+::-webkit-scrollbar { /* width */
+    width: 20px; 
+}
+::-webkit-scrollbar-track { /* Track */
+    background: #262626; 
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb { /* Handle */
+    background: #F0C46A; 
+    border-radius: 10px;
+}
 .container{
     padding: 10px 20%;
 }
@@ -175,7 +186,7 @@ nav ul a:hover::after{
 }
 /* --------------skills------------- */
 #skills{
-    padding: 0px 0;
+    padding: 80px 0;
 }
 .skills-list{
     display: grid;
@@ -217,7 +228,7 @@ nav ul a:hover::after{
 }
 /* --------------portfolio------------- */
 #portfolio{
-    padding: 50px 0;
+    padding: 80px 0;
 }
 .work-list{
     display: grid;
