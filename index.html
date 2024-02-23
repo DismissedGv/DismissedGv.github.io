@@ -15,14 +15,13 @@
         <div class="logo"><i class="fa-solid fa-s"></i><i class="fa-solid fa-k"></i></div>
         <header>
             <nav>
-                <ul id="sidemenu">
-                    <a class="tab-links active-link" href="#header" onclick="opentab('')">Home</a>                   
-                    <a class="tab-links" href="#about" onclick="opentab('')">About</a>
-                    <a class="tab-links" href="#skills" onclick="opentab('')">Skills</a>
-                    <a class="tab-links" href="#portfolio" onclick="opentab('')">Portfolio</a>
-                    <a class="tab-links" href="#contact" onclick="opentab('')">Contact</a>
-                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                </ul>
+                <a class="tab-links active-link" href="#header">Home</a>                   
+                <a class="tab-links" href="#about">About</a>
+                <a class="tab-links" href="#skills">Skills</a>
+                <a class="tab-links" href="#experience">Experience</a>
+                <a class="tab-links" href="#portfolio">Portfolio</a>
+                <a class="tab-links" href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
         </header>
@@ -50,12 +49,7 @@
             <div class="about-col-2">
                 <h1 class="sub-title">About Me</h1>
                 <p>My name is Sinan and I am a 20 year old student trying to find a start for my carrier. A standout trait is my effective communication skills</p>
-
-                <div class="tab-titles">
-                    <div class="tab-links" onclick="opentab('experience')">Experience</div>
-                    <div class="tab-links" onclick="opentab('education')">Education</div>
-                </div>
-                <div class="tab-contents" id="experience">
+                <div class="tab-contents">
                     <ul>
                         <li><span>11/2023 - current</span><br>Indie game project</li>
                         <li><span>01/2024 - 02/2024</span><br>Future games, Game project 2</li>
@@ -64,6 +58,9 @@
                         <li><span>07-2023 - 07/2023</span><br>Acino in Sweden, Umeå</li>
                         <li><span>12/2021 - 05/2024</span><br>Restaurant, Max</li>
                     </ul>
+                </div>
+                <div class="tab-titles">
+                    <div class="tab-links" onclick="opentab('education')">Education</div>
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
@@ -121,6 +118,12 @@
                 <h2>Perforce Helix Core</h2>
             </div>
         </div>
+    </div>
+</section>
+<!----------------experience---------------->
+<section id="experience">
+    <div class="container">
+        <h1 class="sub-title-2">My Experience</h1>
     </div>
 </section>
 <!----------------portfolio---------------->
