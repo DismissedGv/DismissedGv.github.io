@@ -44,16 +44,6 @@ nav{
     list-style: none;
     padding: 20px 15px;
 }
-.logo{
-    font-size: 50px;
-    margin-top: 5px;
-    position: absolute;
-    color: #F0C46A;
-}
-.logo i{ 
-    size: 100px;
-    padding-right: 3px;
-}
 nav a{
     color: #ababab;
     text-decoration: none;
