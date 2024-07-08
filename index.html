@@ -14,10 +14,9 @@
     <div class="container">
         <header>
             <nav>
-                <a class="tab-links active-link" href="#header">Home</a>                   
-                <a class="tab-links" href="#about">About</a>
+                <a class="tab-links active-link" href="#header">About</a>
+                <a class="tab-links" href="#portfolio">Work</a>
                 <a class="tab-links" href="#skills">Skills</a>
-                <a class="tab-links" href="#portfolio">Portfolio</a>
                 <a class="tab-links" href="#contact">Contact</a>
                 <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 <i class="fa-solid fa-bars" onclick="openmenu()"></i>
@@ -26,7 +25,10 @@
         <div class="header-text">
             <h1>I'm <span>Sinan Koc</span></h1>
             <p>Game Developer & <br>Programmer</p>
-            <a href="#contact" class="btn btn3">Contact Me</a>
+            <!-- <a href="#contact" class="btn btn3">Contact Me</a> -->
+        </div>
+        <div class="about-col-1">
+            <img src="images/user.png">
         </div>
         <div class="social-icons" id="social-icons-2">
             <div class="line"></div>
@@ -41,12 +43,9 @@
 <section id="about">
     <div class="container">
         <div class="row">
-            <div class="about-col-1">
-                <img src="images/user.png">
-            </div>
             <div class="about-col-2">
-                <h1 class="sub-title">About Me</h1>
-                <p>My name is Sinan and I am a 20 year old student trying to find a start for my carrier. A standout trait is my effective communication skills</p>
+                <h1 class="sub-title"></h1>
+                <p>I am currently studying at Futuregames and eager to begin my career in the video game industry <br><br>My passion for video games started at a young age, fueling my interest and dedication to this field. <br><br>A standout trait of mine is my effective communication skills, which I believe are crucial for successful collaboration and project management in game development</p>
                 <div class="tab-contents">
                     <ul>
                         <li><span>11/2023 - current</span><br>Indie game project</li>
@@ -58,7 +57,7 @@
                     </ul>
                 </div>
                 <div class="tab-titles">
-                    <div class="tab-links" onclick="opentab('education')">Education</div>
+                    <!--<div class="tab-links" onclick="opentab('education')">Education</div>-->
                 </div>
                 <div class="tab-contents" id="education">
                     <ul>
@@ -68,6 +67,39 @@
                 </div>
             </div>
         </div>
+    </div>
+</section>
+<!----------------portfolio---------------->
+<section id="portfolio">
+    <div class="container">
+        <h1 class="sub-title-2">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work_1.png">
+                <div class="layer">
+                    <h3>Wrathful Hedgehog</h3>
+                    <p>Future games project 1 <br><br>FPS/Horde shooter, made with Unity</p>
+                    <a href="https://futuregames.itch.io/wrathful-hedgehog" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work_2.png">
+                <div class="layer">
+                    <h3>Iron League</h3>
+                    <p>Future games project 2 <br><br>First CO-OP and mobile game, made with Unity</p>
+                    <a href="https://futuregames.itch.io/ironleague" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work_3.png">
+                <div class="layer">
+                    <h3>Biochem Nightshift</h3>
+                    <p>Future games project 3 <br><br>Horror and puzzle game, made with Unreal Engine 5.3</p>
+                    <a href="https://futuregames.itch.io/biochem-nightshift" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
     </div>
 </section>
 <!----------------Skills---------------->
@@ -109,46 +141,13 @@
             </div>
             <div>
                 <i class="fa-solid fa-dna"></i>
-                <h2>Perforce Helix Core</h2>
+                <h2>Perforce</h2>
             </div>
-            <div>
+            <!--<div>
                 <i class="fa-solid fa-cube"></i>
                 <h2>Minecraft</h2>
-            </div>
+            </div> -->
         </div>
-    </div>
-</section>
-<!----------------portfolio---------------->
-<section id="portfolio">
-    <div class="container">
-        <h1 class="sub-title-2">My Work</h1>
-        <div class="work-list">
-            <div class="work">
-                <img src="images/work_1.png">
-                <div class="layer">
-                    <h3>Wrathful Hedgehog</h3>
-                    <p>Future games project 1</p>
-                    <a href="https://futuregames.itch.io/wrathful-hedgehog" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work_2.png">
-                <div class="layer">
-                    <h3>Iron League</h3>
-                    <p>Future games project 2</p>
-                    <a href="https://futuregames.itch.io/ironleague" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-            <div class="work">
-                <img src="images/work_3.png">
-                <div class="layer">
-                    <h3>Biochem Nightshift</h3>
-                    <p>Future games project 3</p>
-                    <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn">See more</a>
     </div>
 </section>
 <!----------------contact---------------->
@@ -165,7 +164,7 @@
                     <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                     <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
                 </div>
-                <a href="images/my_cv.pdf" download class="btn btn2">Download CV</a>
+                <a href="images/Sinan K - Curriculum Vitae.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form action="https://api.web3forms.com/submit" method="POST" target="_blank">

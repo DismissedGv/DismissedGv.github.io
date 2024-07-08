@@ -96,8 +96,11 @@ nav a.active{
 }
 /* --------------about------------- */
 #about{
-    padding: 80px 0;
+    top: 450px;
+    left: 50px;
     color: #ababab;
+    width: 1200px;
+    position: absolute;
 }
 
 .row{
@@ -105,18 +108,15 @@ nav a.active{
     justify-content: space-between;
     flex-wrap: wrap;
 }
-
-.about-col-1{
-    flex-basis: 35%;
-}
 .about-col-1 img{
-    width: 100%;
+    position: absolute;
+    right: 400px;
+    top: 200px;
+    width: 20%;
     border-radius: 15px;
 }
-.about-col-2{
-    flex-basis: 60%;
-}
 .about-col-2 p{
+    flex-basis: 60%;
     font-size: 20px;
 }
 .sub-title{
@@ -292,6 +292,9 @@ nav a.active{
     color: white;
 }
 /* --------------contact------------- */
+#contact{
+    padding: 80px 0;
+}
 .contact-left{
     flex-basis: 35%;
 }
@@ -414,12 +417,6 @@ nav .fa-solid{
     }
     .sub-title{
         font-size: 40px;
-    }
-    .about-col-1, .about-col-2{
-        flex-basis: 100%;
-    }
-    .about-col-1{
-        margin-bottom: 30px;
     }
     .about-col-2{
         font-size: 14px;
