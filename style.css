@@ -109,10 +109,10 @@ nav a.active{
     flex-wrap: wrap;
 }
 .about-col-1 img{
-    position: absolute;
-    right: 400px;
-    top: 200px;
-    width: 20%;
+    position: relative;
+    right: -800px;
+    top: -200px;
+    width: 30%;
     border-radius: 15px;
 }
 .about-col-2 p{
