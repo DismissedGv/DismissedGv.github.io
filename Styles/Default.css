@@ -130,6 +130,11 @@ nav a.active{
     color: #fff;
     margin-left: 40%;
 }
+.sub-title-3{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
 
 .tab-titles{
     display: flex;
