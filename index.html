@@ -12,20 +12,10 @@
 <body>
 <section id="header">
     <div class="container">
-        <header>
-            <nav>
-                <a class="tab-links active-link" href="#header">About</a>
-                <a class="tab-links" href="#portfolio">Work</a>
-                <a class="tab-links" href="#skills">Skills</a>
-                <a class="tab-links" href="#contact">Contact</a>
-                <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
-                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-            </nav>
-        </header>
+        <nav></nav>
         <div class="header-text">
             <h1>I'm <span>Sinan Koc</span></h1>
             <p>Game Developer & <br>Programmer</p>
-            <!-- <a href="#contact" class="btn btn3">Contact Me</a> -->
         </div>
         <div class="social-icons" id="social-icons-2">
             <div class="line"></div>
@@ -36,7 +26,7 @@
         </div>
     </div>
     <div class="about-col-1">
-        <img src="images/background.png">
+        <img src="images/user2.png">
     </div>
 </section>
 <!----------------about---------------->
@@ -45,26 +35,10 @@
         <div class="row">
             <div class="about-col-2">
                 <h1 class="sub-title"></h1>
-                <p>I am currently studying at Futuregames and eager to begin my career in the video game industry <br><br>My passion for video games started at a young age, fueling my interest and dedication to this field. <br><br>A standout trait of mine is my effective communication skills, which I believe are crucial for successful collaboration and project management in game development</p>
-                <div class="tab-contents">
-                    <ul>
-                        <li><span>11/2023 - current</span><br>Indie game project</li>
-                        <li><span>01/2024 - 02/2024</span><br>Future games, Game project 2</li>
-                        <li><span>11/2023 - 11/2023</span><br>Game Jam Mashup</li>
-                        <li><span>10/2023 - 11/2023</span><br>Future games, Game project 1</li>
-                        <li><span>07-2023 - 07/2023</span><br>Acino in Sweden, Umeå</li>
-                        <li><span>12/2021 - 05/2024</span><br>Restaurant, Max</li>
-                    </ul>
-                </div>
-                <div class="tab-titles">
-                    <!--<div class="tab-links" onclick="opentab('education')">Education</div>-->
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>2026</span><br>Future games</li>
-                        <li><span>2023</span><br>Maja Beskow Gymnasiet</li>
-                    </ul>
-                </div>
+                <p>I am currently studying at Futuregames and eager to begin my career in the video game industry <br>
+                    <br>My passion for video games started at a young age, fueling my interest and dedication to this field. <br>
+                    <br>A standout trait of mine is my effective communication skills, which I believe are crucial for successful 
+                    collaboration and project management in game development</p>
             </div>
         </div>
     </div>
@@ -75,21 +49,21 @@
         <h1 class="sub-title-2">Games</h1>
         <div class="work-list">
             <div class="work" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
-                <video src="Videos/2024-03-19 15-32-49.mkv" type="video/mkv" autoplay loop muted></video>
+                <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
                 <div class="text-box">
                     <h3>Wrathful Hedgehog <i class="fa-solid fa-angle-right"></i></h3>
                     <p>Gameplay Programmer <br><br>This game was our first game project at FutureGames. You play as a wratful hedgehog trying to defend his home from foxes.</p> <!-- FPS/Horde shooter, made with Unity -->
                 </div>
             </div>
             <div class="work" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
-                <video src="Videos/2024-03-19 15-32-49.mkv" type="video/mkv" autoplay loop muted></video>
+                <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
                 <div class="text-box">
                     <h3>Iron League <i class="fa-solid fa-angle-right"></i></h3>
                     <p>Future games project 2 <br><br>First CO-OP and mobile game, made with Unity</p> <!-- href="https://futuregames.itch.io/ironleague" -->
                 </div>
             </div>
             <div class="work" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
-                <video src="Videos/2024-03-19 15-32-49.mkv" type="video/mkv" autoplay loop muted></video>
+                <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
                 <div class="text-box">
                     <h3>Biochem Nightshift <i class="fa-solid fa-angle-right"></i></h3>
                     <p>Future games project 3 <br><br>Horror and puzzle game, made with Unreal Engine 5.3</p> <!-- href="https://futuregames.itch.io/biochem-nightshift" -->
@@ -113,8 +87,16 @@
                 <h2>C++</h2>
             </div>
             <div>
+                <i class="fa-solid fa-u"></i>
+                <h2>Unreal Engine</h2>
+            </div>
+            <div>
                 <i class="fa-solid fa-c"></i>
                 <h2>C#</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-unity"></i>
+                <h2>Unity</h2>
             </div>
             <div>
                 <i class="fa-brands fa-html5"></i>
@@ -123,14 +105,6 @@
             <div>
                 <i class="fa-brands fa-css3-alt"></i>
                 <h2>CSS</h2>
-            </div>
-            <div>
-                <i class="fa-brands fa-unity"></i>
-                <h2>Unity</h2>
-            </div>
-            <div>
-                <i class="fa-solid fa-u"></i>
-                <h2>Unreal Engine</h2>
             </div>
             <div>
                 <i class="fa-brands fa-github"></i>

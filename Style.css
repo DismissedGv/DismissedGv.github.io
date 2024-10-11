@@ -34,7 +34,7 @@ nav{
     z-index: 10;
     position: fixed;
     border: 3px solid #252525;
-    background-color: #1d1d1f;
+    background-color: #121212;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -44,29 +44,6 @@ nav{
     list-style: none;
     padding: 20px 15px;
 }
-nav a{
-    color: #ababab;
-    text-decoration: none;
-    font-size: 18px;
-    position: relative;
-    margin-left: 7px;
-    margin-right: 7px;
-}
-nav a::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #F0C46A;
-    position: absolute;
-    left: 0;
-    bottom: -6px;
-    transition: 0.5s;
-}
-nav a:hover,
-nav a.active{
-    width: 100%;
-}
-
 .header-text{
     margin-top: 20%;
     font-size: 30px;
@@ -136,77 +113,34 @@ nav a.active{
     color: #fff;
 }
 
-.tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-}
-
-.tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-}
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: #F0C46A;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-
-.tab-links.active-link::after{
-    width: 100%;
-}
-
-.tab-contents ul li{
-    list-style: none;
-    margin: 10px 0;
-}
-.tab-contents ul li span{
-    color: #F0C46A;
-    font-size: 20px;
-}
-.tab-contents{
-    display: none;
-    font-size: 25px;
-}
-.tab-contents.active-tab{
-    display: block;
-}
-
 /* --------------skills------------- */
 #skills{
-    padding: 80px 0;
+    padding: 10px 0;
 }
 .skills-list{
     display: grid;
     justify-content: center;
-    grid-template-columns: auto auto auto auto;
-    grid-gap: 40px;
-    margin-top: 50px;
+    grid-template-columns: auto auto auto auto auto auto auto;
+    grid-gap: 20px;
+    margin-top: 20px;
+    margin-left: 0px;
 }
 .skills-list div{
     background: #252423;
-    width: 250px;
-    height: 200px;
-    padding: 40px;
+    width: 150px;
+    height: 150px;
+    padding-top: 40px;
     text-align: center;
-    font-size: 13px;
     font-weight: 300;
     border-radius: 10px;
     transition: background 0.5s, transform 0.5s;
 }
 .skills-list div i{
-    font-size: 50px;
-    margin-bottom: 30px;
+    font-size: 35px;
+    margin-bottom: 5px;
 }
 .skills-list div h2{
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 500;
     margin-bottom: 15px;
 }
@@ -463,10 +397,6 @@ nav .fa-solid{
     }
     .about-col-2 p{
         font-size: 20px;
-    }
-    .tab-links{
-        font-size: 16px;
-        margin-right: 20px;
     }
     .contact-left, .contact-right{
         flex-basis: 100%;
