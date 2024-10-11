@@ -94,6 +94,7 @@ nav a.active{
     margin-left: 10px;
     margin-top: -100px;
 }
+
 /* --------------about------------- */
 #about{
     top: 450px;
@@ -125,7 +126,7 @@ nav a.active{
     color: #fff;
 }
 .sub-title-2{
-    font-size: 60px;
+    font-size: 50px;
     font-weight: 600;
     color: #F0C46A;
 }
@@ -177,6 +178,7 @@ nav a.active{
 .tab-contents.active-tab{
     display: block;
 }
+
 /* --------------skills------------- */
 #skills{
     padding: 80px 0;
@@ -219,30 +221,60 @@ nav a.active{
     background: #F0C46A;
     transform: translateY(-10px);
 }
-/* --------------portfolio------------- */
+
+/* --------------Games------------- */
 #portfolio{
-    padding: 80px 0;
+    --Games-width: 600px;
+
+    padding: 80px 0;   
 }
 .work-list{
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 40px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 .work{
-    border-radius: 10px;
-    position: relative;
-    overflow: hidden;
+    border-radius: 0px;
+    width: 100%;
+    height: 100%;
+    
+    cursor: pointer;
+    /* position: relative;
+    overflow: hidden; */
 }
-.work iframe{
-    width: 500px;
-    height: 285px;
-    border-radius: 10px;
+.work:hover{
+    transform: scale(1.1);
+    border: 2px solid #F0C46A;
+}
+.work video{
+    width: var(--Games-width);
+    height: auto;
     display: block;
     transition: transform 0.5s;
 }
 .text-box{
+    width: var(--Games-width);
+    height: 200px;
+    padding: 10px 20px;
+    background-color: #232323;
     
+}
+.text-box h3{
+    color: #F0C46A;
+    font-size: 1.5rem;
+}
+.text-box h3 i{
+    margin: 0 0 0 300px;
+    font-size: 2rem;
+}
+.text-box p{
+    font-size: 20px;
+    font-weight: 100;
+
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 /* .layer{ 
     width: 100%;
