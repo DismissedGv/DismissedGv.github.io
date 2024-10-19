@@ -13,15 +13,16 @@
     
 <!----------------Navigation bar---------------->
     <nav>
-        <a href="index.html">Sinan Koc</a>
+        <a href="index.html#about">Sinan Koc</a>
 
-        <div class="social-icons">
+        <div class="social-icons1">
             <a href="https://www.linkedin.com/in/sinan-koc-47065428b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
             <a href="https://www.instagram.com/sinan_ckc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
             <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
             <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a class="resume" href="https://docs.google.com/document/d/1Nb6-c-W0KDgFF9a3No-v7_ArTD4zfoR2gH79aMNtgBw/edit?usp=sharing" target="_blank"></i> Resume</a>
         </div>
+
+        <a class="resume" href="https://docs.google.com/document/d/1Nb6-c-W0KDgFF9a3No-v7_ArTD4zfoR2gH79aMNtgBw/edit?usp=sharing" target="_blank">Resume</a>
 
         <p>Game Developer & Programmer</p>
     </nav>
@@ -30,41 +31,58 @@
 <section id="about">
     <div class="container">
         <div class="row">
-            <p class="about-text">I am currently studying at Futuregames and eager to begin my career in the video game industry <br>
-                <br>My passion for video games started at a young age, fueling my interest and dedication to this field. <br>
-                <br>A standout trait of mine is my effective communication skills, which I believe are crucial for successful 
-                collaboration and project management in game development.
+            <p class="about-text">Game Programmer passionate about the video game industry, specializing in systems and gameplay programming, , 
+                and focused on effective communication, clean code and new challenges for successful collaboration.
             </p>
         </div>
     </div>
     <img src="images/user.png"> <!-- User image -->
 </section>
 
-<!----------------Games---------------->
-<section id="Games">
+<!----------------Projects---------------->
+<section id="Projects">
     <div class="container">
-        <h1 class="sub-title">My Work / Projects</h1>
+        <h1 class="sub-title">Projects</h1>
         <div class="work-list">
-            <div class="work" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
+            <div class="work" id="WrathfulHedgehog" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
                 <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
+                <div class="work-info"><i class="fa-solid fa-users"></i> 14 <i class="fa-solid fa-clock"></i> 2 Months <i class="fa-solid fa-screwdriver-wrench"></i> Unity</div>
                 <div class="text-box">
                     <h3>Wrathful Hedgehog <i class="fa-solid fa-angle-right"></i></h3>
                     <p>Gameplay Programmer <br><br>This game was our first game project at FutureGames. 
-                        You play as a wratful hedgehog trying to defend his home from foxes.</p> <!-- FPS/Horde shooter, made with Unity -->
+                        It's a first person horde shooter game where you play as a wratful hedgehog trying to defend it's home from dangerous foxes.</p>
                 </div>
             </div>
-            <div class="work" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
+            <div class="work" id="IronLeague" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
                 <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
+                <div class="work-info"><i class="fa-solid fa-users"></i> 17 <i class="fa-solid fa-clock"></i> 2 Months <i class="fa-solid fa-screwdriver-wrench"></i> Unity</div>
                 <div class="text-box">
                     <h3>Iron League <i class="fa-solid fa-angle-right"></i></h3>
-                    <p>Future games project 2 <br><br>First CO-OP and mobile game, made with Unity</p> <!-- href="https://futuregames.itch.io/ironleague" -->
+                    <p>Gameplay Programmer & Lead <br><br>This was my first take on a mobile and co-op game. You play as either the Ironer or the Thrower, trying to get as many points before your two minutes of alloted time runs out.</p> <!-- href="https://futuregames.itch.io/ironleague" -->
                 </div>
             </div>
-            <div class="work" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
+            <div class="work" id="BiochemNightshift" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
                 <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
+                <div class="work-info"><i class="fa-solid fa-users"></i> 16 <i class="fa-solid fa-clock"></i> 7 Weeks <i class="fa-solid fa-screwdriver-wrench"></i> Unreal</div>
                 <div class="text-box">
                     <h3>Biochem Nightshift <i class="fa-solid fa-angle-right"></i></h3>
-                    <p>Future games project 3 <br><br>Horror and puzzle game, made with Unreal Engine 5.3</p> <!-- href="https://futuregames.itch.io/biochem-nightshift" -->
+                    <p>Product Owner & Gameplay Programmer <br><br>It's a horror and puzzle game where you play as Fredrik, a process operator, navigating the dangerous corridors of Ulrich's Medical Science. </p> <!-- href="https://futuregames.itch.io/biochem-nightshift" This game project taught me a lot about leadership and communication. -->
+                </div>
+            </div>
+            <div class="work" id="DelteteTheDevs" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
+                <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
+                <div class="work-info"><i class="fa-solid fa-users"></i> 11 <i class="fa-solid fa-clock"></i> 4 Weeks <i class="fa-solid fa-screwdriver-wrench"></i> Unreal</div>
+                <div class="text-box">
+                    <h3>Delete The Devs <i class="fa-solid fa-angle-right"></i></h3>
+                    <p>Gameplay Programmer <br><br>Its a game about deleting the devevelopers of the game and as you delete them, you also delete the game which is the end goal.</p>
+                </div>
+            </div>
+            <div class="work" id="FishingSimulator" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
+                <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
+                <div class="work-info"><i class="fa-solid fa-users"></i> 11 <i class="fa-solid fa-clock"></i> 2 Months <i class="fa-solid fa-screwdriver-wrench"></i> Unity</div>
+                <div class="text-box">
+                    <h3>Fishing Simulator <i class="fa-solid fa-angle-right"></i></h3>
+                    <p>UI & System Programmer <br><br>A relaxing game about fishing. It's a small open world where player has washed ashore and the end goal is to leave the island with a broken boat which you build piece by piece.</p>
                 </div>
             </div>
         </div>
@@ -117,7 +135,7 @@
     </div>
 </section>
 
-<!----------------contact---------------->
+<!----------------Contact---------------->
 <section id="contact">
     <div class="container">
         <h1 class="contact-title">Contact Me</h1>
