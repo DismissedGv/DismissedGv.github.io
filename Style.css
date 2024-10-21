@@ -251,6 +251,9 @@ nav p{
     position:absolute;
     margin-top: -40px;
 }
+.work-info i{
+    margin: 0 0 0 10px;
+}
 .text-box{
     width: var(--project-video-width);
     height: 200px;
