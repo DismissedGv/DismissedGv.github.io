@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:  Round, Open , Helvetica , Helvetica, "sans-serif";
+    font-family:  "Open Sans", Arial, Helvetica, "sans-serif";
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
@@ -117,18 +117,38 @@ nav p{
     font-weight: 300;
     color: #ababab;
 }
-.game-description{
-    padding: 10px 20px;
+.game-description-list{
     font-size: 20px;
     font-weight: 300;
     color: #ababab;
+    
     display: grid;
-    align-items: center;
     grid-template-columns: auto auto;
+    grid-gap: 15px;
+    margin-top: 10px;
 }
-.game-description p{
+.game-description-list h1{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.game-description-list p{
+    font-size: 17px;
+    font-weight: 600;
+    padding-bottom: 5px;
+}
+.game-context{
+    width: 575px;
+    height: 200px;
+    background-color: #232323;
+
+    border-radius: 10px;
+    padding-left: 5%;
+    align-content: center;
+}
+.game-introduction{
     font-size: 20px;
-    font-weight: 100px;
+    font-weight: 300;
+    color: #ababab;
 }
 
 /* --------------About------------- */
