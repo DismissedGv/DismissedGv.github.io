@@ -414,7 +414,7 @@ nav p{
 
 /* --------------Social Icons------------- */
 .social-icons1{
-    margin-top: 30px;
+    margin-top: 30px;   
 }
 .social-icons1 a{
     text-decoration: none;
@@ -434,7 +434,7 @@ nav p{
     margin-bottom: 5px;
 }
 .social-icons{
-    margin-top: 30px;
+    margin-top: 25px;
 }
 .social-icons a{
     text-decoration: none;
@@ -453,9 +453,9 @@ nav p{
 .copyright{
     width: 100%;
     text-align: center;
-    padding: 25px 0;
+    padding: 20px 0;
     background: #262626;
-    font-weight: 300;
+    font-weight: 600;
     margin-top: 20px;
     font-size: 10px;
 }
