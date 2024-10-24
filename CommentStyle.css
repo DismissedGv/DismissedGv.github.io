@@ -1,0 +1,84 @@
+body{
+    box-sizing: border-box;
+    font-size: 14px;
+    background: #e9e9e9;
+    font-family: systemem-ui;
+}
+.comment-box,
+.post-comment .list{
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 2px #0002;
+}
+.comment-session{
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+}
+.post-comment .list{
+    width: 100%;
+    margin-bottom: 12px;
+}
+.post-comment .list .user{
+    display: flex;
+    padding: 8px;
+    overflow: hidden;
+}
+.post-comment .list .user .user-img{
+    width: 38px;
+    height: 38px;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+.comment-session .name{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.post-comment .list .day{
+    font-size: 12px;
+}
+.post-comment .comment-post{
+    padding: 0 0 15px 58px;
+}
+
+/* Comment Box */
+.comment-box{
+    padding: 10px;
+    overflow: hidden;
+}
+.comment-box .user{
+    display: flex;
+    width: min-content;
+}
+.comment-box .image img{
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.comment-box .textarea{
+    background: #eee;
+    width: webkit-fill-available;
+    height: 152px;
+    margin: 10px 0;
+    padding:  10px;
+    resize: inherit;
+    border-radius: 5px;
+    box-shadow: 0 0 0 1px #0003;
+}
+.comment-box .textarea:focus-visible{
+    box-shadow: inset 0 0 0 1px #009cff;
+    outline: none;
+}
+.comment-box .comment-submit{
+    float: right;
+    padding: 6px 10px;
+    border: none;
+    background: #009cff;
+    color: #eee;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.comment-box .comment-submit:hover{
+    background: #0076bf;
+}
