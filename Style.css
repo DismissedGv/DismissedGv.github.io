@@ -162,6 +162,11 @@ nav p{
     font-weight: 300;
     color: #ababab;
 }
+.game-introduction mark{
+    font-weight: bold;
+    background: none;
+    color: #ababab
+}
 .game-introduction a{
     color:#F0C46A;
 }
