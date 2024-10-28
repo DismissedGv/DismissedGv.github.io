@@ -216,15 +216,16 @@ nav p{
 
 /* --------------Projects------------- */
 #projects{
-    --project-video-width: 600px;
+    --project-video-width: 400px;
     --Games-color: #F0C46A;
 
     padding: 80px 0;   
 }
 .work-list{
     display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 40px;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    grid-gap: 20px;
     margin-top: 20px;
 }
 .work{
@@ -235,7 +236,7 @@ nav p{
     cursor: pointer;
 }
 .work:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
     --Games-color:#e3d9c6;
 }
 .work video{
@@ -250,8 +251,8 @@ nav p{
 .work-info{
     width: var(--project-video-width);
     height: 40px;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px 0px;
+    font-size: 14px;
     background-color: #232323c5;
     position:absolute;
     margin-top: -40px;
@@ -274,11 +275,10 @@ nav p{
     font-size: 1.5rem;
 }
 .text-box h3 i{
-    margin: 0 0 0 300px;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 .text-box p{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 100;
 
     display: flex;
@@ -309,11 +309,12 @@ nav p{
 .education-list{
     display: grid;
     grid-template-columns: auto auto;
+    justify-content:left;
     grid-gap: 40px;
     margin-top: 20px;
 }
 .education{
-    width: 100%;
+    width: 500px;
     height: 150px;
     background-color: #252423;
     border-radius: 10px;
