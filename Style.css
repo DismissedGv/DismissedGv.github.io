@@ -186,9 +186,9 @@ nav p{
 #about img{
     position: absolute;
     left: 350px;
-    top: 30px;
-    width: 20%;
-    border-radius: 15px;
+    top: 150px;
+    width: 18%;
+    border-radius: 10%;
 }
 .about-text{
     width: 800px;
