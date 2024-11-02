@@ -37,7 +37,12 @@
             <div class="game-context1">
                 <br>
                 <h1>About</h1>
-                <p>Our first game project at FutureGames.</p>
+                <p>
+                    Iron League is a mobile game inspired by a real-life intense sport. It was FutureGames second game project, 
+                    developed in collaboration with Turborilla. 
+                    <br><br>
+                    The game was built with C# and Unity together with a team of 17 people assigned by FutureGames.
+                </p>
             </div>
             <div class="game-context2">
                 <h1>Info</h1>
@@ -50,12 +55,67 @@
 
         <div class="game-introduction">
             <h1 class="game-sub-title">Introduction</h1>
-            <p>Wrathful Hedgehog is a first person horde shooter game where you play as a wratful hedgehog trying to defend it's home from dangerous foxes</p>
+            <p>
+                In this project I took the responsibility of programming the game's <mark>audio system</mark> and <mark>user interface</mark>.
+                Our team utilized <mark>github</mark> desktop as source control, <mark>miro</mark> for prototyping, <mark>jira</mark> for project management. 
+                This was the first time I ever did a mobile game, but it wasn't so much different when it came down to logic.
+            </p>
+
+            <h1 class="game-sub-title">Audio System</h1>
+            <div class="game-grid-container">
+                <p>
+                    The game's audio system consists of three key scripts:
+                    <br><br>
+                    <mark>AudioManager:</mark> Responsible for managing volume levels and utilizing Unity's save and load system to persist volume settings.
+                    <br><br>
+                    <mark>Sound:</mark> A designer-friendly interface for working with the audio system, providing flexibility and ease of use.
+                    <br><br>
+                    <mark>UISoundController:</mark> Handles user input for volume adjustments in the game's settings menu, ensuring a seamless user experience.
+                </p>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="../images/CodeSnippet/IronLeague/AudioManager1.png">
+                        <img id="slide-2" src="../images/CodeSnippet/IronLeague/AudioManager2.png">
+                        <img id="slide-3" src="../images/CodeSnippet/IronLeague/AudioManager3.png">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                        <a href="#slide-3"></a>
+                    </div>
+                </div>
+            </div>
+
+            <h1 class="game-sub-title">User Interface</h1>
+            <div class="game-grid-container">
+                <p>
+                    I have implemented two <mark>UI</mark> scripts in the game: <mark>ScoreManager</mark> and <mark>ScorePopup</mark>. 
+                    <br><br>
+                    The <mark>ScoreManager</mark> script 
+                    contains two key functions: one for initializing player scores and another for updating scores in real-time. 
+                    <br><br>
+                    Meanwhile, the <mark>ScorePopup</mark> script is responsible for dynamically animating the score display using a lerp function 
+                    to smoothly transition to the total score.
+                </p>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-6" src="../images/CodeSnippet/IronLeague/ScoreManager.png">
+                        <img id="slide-7" src="../images/CodeSnippet/IronLeague/ScorePopup.png">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-6"></a>
+                        <a href="#slide-7"></a>
+                    </div>
+                </div>
+            </div>
 
             <h1 class="game-sub-title">What I learned</h1>
-            <p>Wrathful Hedgehog is a first person horde shooter game where you play as a wratful hedgehog trying to defend it's home from dangerous foxes</p>
-
-            <p><br>Download and Play Iron League on <a href="https://futuregames.itch.io/ironleague" target="_blank">itch.io <i class="fa-solid fa-arrow-up-right-from-square"></i></a></p>
+            <p>
+                I had a blast working on this project, thanks to a team that was open, communicative, and eager to learn. I also had the opportunity to refine my 
+                skills in <mark>C#</mark>, <mark>Unity</mark>, and project management tools like <mark>github</mark>, <mark>miro</mark>, and <mark>jira</mark>.
+                <br><br>
+                Download and Play Iron League on <a href="https://futuregames.itch.io/ironleague" target="_blank">itch.io <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </p>
         </div>
     </div>
 </Section>

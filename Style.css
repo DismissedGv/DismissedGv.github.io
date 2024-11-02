@@ -148,7 +148,6 @@ nav p{
 .game-description-list p{
     font-size: 17px;
     font-weight: 600;
-    padding-bottom: 5px;
 }
 .game-context1{
     width: 575px;
@@ -158,15 +157,25 @@ nav p{
     border-radius: 10px;
     padding-left: 5%;
     align-content: center;
+    margin-right: -80px;
+}
+.game-context1 p{
+    padding-bottom: 20px;
 }
 .game-context2{
     width: 575px;
-    height: 200px;
+    height: auto;
     background-color: #232323;
 
     border-radius: 10px;
     padding-left: 5%;
     align-content: center;
+}
+.game-context2 p{
+    padding-bottom: 15px;
+}
+.game-context2 h1{
+    padding-top: 20px;
 }
 .game-introduction{
     font-size: 20px;
@@ -195,12 +204,12 @@ nav p{
     transition:transform 0.25s ease;
 }
 .slider-wrapper:hover {
-    -webkit-transform:scale(1.35);
-    transform:scale(1.35);
+    -webkit-transform:scale(1.7);
+    transform:scale(1.7);
 }
 .slider{
     display: flex;
-    aspect-ratio: 16 / 17;
+    aspect-ratio: 16 / 9;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
@@ -219,6 +228,7 @@ nav p{
     display: flex;
     column-gap: 1rem;
     position: absolute;
+    top: 240px;
     bottom: 1.25rem;
     left: 50%;
     transform: translateX(-50%);
