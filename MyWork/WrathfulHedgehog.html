@@ -37,9 +37,9 @@
             <div class="game-context1">
                 <br>
                 <h1>About</h1>
-                <p>Wrathful Hedgehog was our first game project at FutureGames and it was made with C#/Unity together with a team assigned by FutureGames.
-                    <br> <br>
-                    It's a game about deleting the devevelopers of the game and as you delete the crew, you also delete the game which is the end goal. <br><br>
+                <p>
+                    Wrathful Hedgehog was our first game project at FutureGames<br>
+                    and it was made with C#/Unity together with a team assigned by FutureGames.
                 </p>
             </div>
             <div class="game-context2">
@@ -53,24 +53,59 @@
 
         <div class="game-introduction">
             <h1 class="game-sub-title">Introduction</h1>
-            <p>In this project I took the responsibility of programming the game's <mark>gameplay</mark> and <mark>artificial intelligence</mark> since that was our second 
+            <p>
+                In this project I took the responsibility of programming the game's <mark>gameplay</mark> and <mark>artificial intelligence</mark> since that was our second 
                 core mechanic of the game. We use <mark>github</mark> desktop as source control, <mark>miro</mark> for prototyping, <mark>jira</mark> for project management. 
-                I mainly put lot of focus on AI but I also worked making the map shrink, health, and <mark>UI</mark>. 
+                I mainly put lot of focus on AI but I also worked making the cave shrink, health, and <mark>UI</mark>. 
                 I also wanted to get a better understanding of unity AI since it was my first time using it.
             </p>
 
             <h1 class="game-sub-title">Gameplay</h1>
-            <p>
-                Health and UI was basic, whenever the player was taking damage I had a collider function on the enemie when they were in attacking state and collided with the 
-                player. The game manager was for knowing when the turn were over. there were 2 turns, one for the when the enemies were spawning in map started to shrink 
-                and one for where the player could get ready for the next wave after defeated all the enemies that spawned.
-            </p>
+            <div class="game-grid-container">
+                <p>
+                    Health and <mark>UI</mark> was basic, whenever the player was taking damage I had a collider function on the enemie when they were in attacking 
+                    state and collided with the player. 
+                    <br><br>
+                    The <mark>game manager</mark> was for knowing when the turn was over. there were 2 turns, one for the when the enemies were spawning in and the cave shrinking
+                    and one for where the player could get ready for the next wave after defeating all the enemies in the previous round.
+                </p>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-1" src="../images/CodeSnippet/WrathfulHedgehog/healthScript.png">
+                        <img id="slide-2" src="../images/CodeSnippet/WrathfulHedgehog/ShrinkWaveScript.png">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-1"></a>
+                        <a href="#slide-2"></a>
+                    </div>
+                </div>
+            </div>
 
             <h1 class="game-sub-title">Artificial Intelligence</h1>
-            <p>
-                This was my first time doing artificial intelligence in anything, therefore nothing too complicated was made here. I downloaded Unitys AI Navigation to 
-                be able to use a Navmesh for the ground surface and nav mesh agent so the enemies know where to walk and avoid obstacles.
-            </p>
+            <div class="game-grid-container">
+                <p>
+                    This was my first time doing artificial intelligence in anything, therefore nothing too complicated was made here. 
+                    <br><br>
+                    I downloaded Unitys AI Navigation to 
+                    be able to use a <mark>NavMesh</mark> for the ground surface and <mark>NavMesheshAgent</mark> so the enemies know where to walk and avoid obstacles.
+                </p>
+                <div class="slider-wrapper">
+                    <div class="slider">
+                        <img id="slide-3" src="../images/CodeSnippet/WrathfulHedgehog/EnemySpawnerScript1.png">
+                        <img id="slide-4" src="../images/CodeSnippet/WrathfulHedgehog/EnemySpawnerScript2.png">
+                        <img id="slide-5" src="../images/CodeSnippet/WrathfulHedgehog/EnemySpawnerScript3.png">
+                        <img id="slide-6" src="../images/CodeSnippet/WrathfulHedgehog/EnemyScript.png">
+                        <img id="slide-7" src="../images/CodeSnippet/WrathfulHedgehog/EnemyNavigationScript.png">
+                    </div>
+                    <div class="slider-nav">
+                        <a href="#slide-3"></a>
+                        <a href="#slide-4"></a>
+                        <a href="#slide-5"></a>
+                        <a href="#slide-6"></a>
+                        <a href="#slide-7"></a>
+                    </div>
+                </div>
+            </div>
 
             <h1 class="game-sub-title">What I learned</h1>
             <p>
