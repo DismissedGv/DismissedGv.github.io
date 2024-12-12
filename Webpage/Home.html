@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinan K Portfolio</title>
+    <link rel="icon" href="../images/tab-icon.png">
+    <link rel="stylesheet" href="WebpageStyle.css">
+    <script src="WebpageScript.js" defer></script>
+    <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<!----------------Navigation bar---------------->
+<nav>
+    <a href="Home.html#about">SEM</a>
+
+    <!-- searchbar-->
+</nav>
+
+<!----------------About---------------->
+<section id="about">
+    <div class="container">
+        <p class="about-text">
+            Learn To Code
+        </p>
+        <div class="search-wrapper">
+            <input type="search" value="" id="search" data-search>
+            <!-- <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-xmark"></i> -->
+        </div>
+        <div class="cards-container" data-cards-container></div>
+    </div>
+
+    <template data-card-template>
+        <a class="card" href="#" data-url>
+            <div class="card-header" data-header></div>
+            <div class="card-body" data-body></div>
+        </a>
+    </template>
+</section>
+
+<!----------------Contact---------------->
+<section id="contact">
+    <div class="container">
+        <div class="contact-list">
+            <p><i class="fa-solid fa-envelope"></i><a class="contact-button" href="mailto:Kocsinan958@gmail.com">Kocsinan958@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sinan-koc-47065428b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.gg/h7RcnYuXpp" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/sinan_ckc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!----------------Copyright---------------->
+<div class="copyright">
+    <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
+</div>
+
+</body>
+</html>
