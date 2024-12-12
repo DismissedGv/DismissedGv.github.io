@@ -1,30 +1,39 @@
-//-----------------------------------------------------------------Searchbar
+//-----------------------------------------------------------------References
 const htmlCardTemplate = document.querySelector("[data-card-template]")
 const htmlCardContainer = document.querySelector("[data-cards-container]")
 const searchInput = document.querySelector("[data-search]")
 
+//-----------------------------------------------------------------Searchable Cards
 const htmlFiles = [
-  { name: "Monobehaviour", content: "<p>This is the content of file1.html</p>", url: "cs/cs_monobehaviour.html" },
-  { name: "Hashset", content: "<p>This is the content of file2.html</p>", url: "cs/cs_hashset.html" },
+  { name: "Monobehaviour", content: "", url: "cs/cs_monobehaviour.html" },
+  { name: "List", content: "", url: "cs/cs_list.html" },
+  { name: "Arrays", content: "", url: "cs/cs_arrays.html" },
+  { name: "Dictionary", content: "", url: "cs/cs_dictionary.html" },
+  { name: "Hashset", content: "", url: "cs/cs_hashset.html" },
+  { name: "For Loop", content: "", url: "cs/cs_for_loop.html" },
+  { name: "While Loop", content: "", url: "cs/cs_while_loop.html" },
   // Add more HTML files to this array as needed
 ];
 
+//-----------------------------------------------------------------Add Cards
 htmlFiles.forEach(file => {
-  const card = htmlCardTemplate.content.cloneNode(true)
-  const cardHeader = card.children[0].querySelector("[data-header]")
-  const cardBody = card.children[0].querySelector("[data-body]")
-  const cardLink = card.querySelector("a")
-  console.log(cardLink)
+  const card = htmlCardTemplate.content.cloneNode(true).children[0]
+  const cardHeader = card.querySelector("[data-header]")
+  const cardBody = card.querySelector("[data-body]")
+  const cardUrl = card.parentNode.querySelector("[data-url]")
+  console.log(card)
+  console.log(cardUrl)
 
   cardHeader.textContent = file.name
   cardBody.innerHTML = file.content
-  cardLink.href = file.url
+  cardUrl.href = file.url
   
   htmlCardContainer.append(card)
 
   file.element = card
 })
 
+//-----------------------------------------------------------------Search Input
 searchInput.addEventListener("input", e => {
   const value = e.target.value.toLowerCase()
   htmlFiles.forEach(file => {

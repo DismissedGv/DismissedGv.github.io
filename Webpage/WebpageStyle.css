@@ -108,8 +108,12 @@ input{
     padding: 0.5rem;
     text-decoration: none;
 }
+.card:hover{
+    background-color: lightgrey;
+}
 .card > .card-header{
     margin-bottom: 0.25rem;
+    text-align: center;
     color: black;
 }
 .card > .card-body{
@@ -209,6 +213,9 @@ input{
     color: #F0C46A;
 }
 
+.bottom-page{
+    margin-top: 217px;
+}
 /* --------------Mobile------------- */
 @media only screen and (max-width: 600px){
     .container{
