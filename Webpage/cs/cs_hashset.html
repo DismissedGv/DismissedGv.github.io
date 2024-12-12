@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sinan K Portfolio</title>
-    <link rel="icon" href="../images/tab-icon.png">
+    <link rel="icon" href="../../images/tab-icon.png">
     <link rel="stylesheet" href="../WebpageStyle.css">
     <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
 </head>
@@ -13,7 +13,7 @@
     
 <!----------------Navigation bar---------------->
 <nav>
-    <a href="../Home.html#about">Website name</a>
+    <a href="../Home.html#about">C# Hashset</a>
 
     <!-- searchbar-->
 </nav>
@@ -22,18 +22,54 @@
 <section id="about">
     <div class="container">
         <p class="about-text">
-            A HashSet is a data structure used to store a collection of unique elements. 
-            It is part of many programming languages' standard libraries, such as Java (java.util.HashSet) and C# (System.Collections.Generic.HashSet). 
+            A <mark>HashSet</mark> is a data structure used to store a collection of unique elements. 
+            It is part of many programming languages' standard libraries, such as Java (<mark2> java.util.HashSet </mark2>)  and C# (<mark2> System.Collections.Generic.HashSet </mark2>). 
             Here's a breakdown of what it is and how it works:
+        </p>
+
+        <div class="about-text2">Key Features of a HashSet:</div>
+
+        <p class="about-text3">
+            1. Uniqueness:
+            <div class="about-text4"><ul><li>It ensures that no duplicate elements are present in the collection.</li></ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            2. Efficient Lookups:
+            <div class="about-text4"><ul><li>HashSet provides efficient operations for adding, removing, and checking for the presence of an element, typically in </ul>
+                O(1) time.</li>
+            </div>
+        </p>
+        <p class="about-text3">
+            3. Hashing Mechanism:
+            <div class="about-text4"><ul><li>Elements are stored based on their hash codes, calculated using a hash function. The hash code determines the "bucket" 
+                in which an element will be stored.</li></ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            4. No Ordering:
+            <div class="about-text4"><ul><li>In most implementations (e.g., Java's HashSet), the order of elements is not maintained. If you need ordered collections, 
+                you would use other structures like TreeSet or LinkedHashSet.</li></ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            5. Dynamic Resizing:
+            <div class="about-text4"><ul><li>HashSet dynamically resizes its internal structure (a hash table) as more elements are added, maintaining efficiency.</li></ul>
+
+            <div class="about-text2">When to Use a HashSet:</div> <!-- Fix position -->
+            <ul>
+                <li>When you need to ensure uniqueness in a collection.</li>
+                <li>When fast lookup, insertion, and deletion are required.</li>
+                <li>When the order of elements doesn't matter.</li>
+            </ul>
         </p>
     </div>
 </section>
 
 
 <!----------------Contact---------------->
-<section id="contact">
+<section class="bottom-page">
     <div class="container">
-        <h1 class="contact-title">Contact</h1>
         <div class="contact-list">
             <p><i class="fa-solid fa-envelope"></i><a class="contact-button" href="mailto:Kocsinan958@gmail.com">Kocsinan958@gmail.com</a></p>
             <div class="social-icons">
@@ -45,12 +81,12 @@
             </div>
         </div>
     </div>
-</section>
 
-<!----------------Copyright---------------->
-<div class="copyright">
-    <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
-</div>
+    <!----------------Copyright---------------->
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
+    </div>  
+</section>
 
 <script src="script.js"></script>
 

@@ -65,26 +65,37 @@ nav a{
     padding-bottom: 200px;
 }
 .about-text{
-    width: 800px;
-    margin-left: 35%;
-    flex-basis: 60%;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
+    color: white;
+}
+.about-text mark{
+    font-weight: bold;
+    background: none;
     color: #f0c36a9f;
 }
-.header-text h1{
-    font-size: 40px;
-    margin-top: 20px;
-    color: #f7f7f7;
+.about-text mark2{
+    background: #f0c36a18;
+    color: #f0c36a9f;
 }
-.header-text h1 span{
-    font-size: 60px;
-    color: #F0C46A;
+.about-text2 {
+    margin: 15px 0;
+    font-size: 2rem;
+    font-weight: 600;
+    color: white;
 }
-.header-text p{
-    margin-top: 10px;
-    color: #ababab;
-    font-size: 40px;
+.about-text3 {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: white;
+}
+.about-text4 {
+    margin-top: -5px;
+    margin-left: 50px;
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
 }
 
 /* --------------Searchbar------------- */
@@ -109,7 +120,7 @@ input{
     text-decoration: none;
 }
 .card:hover{
-    background-color: lightgrey;
+    background-color: rgb(167, 166, 166);
 }
 .card > .card-header{
     margin-bottom: 0.25rem;
