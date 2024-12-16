@@ -75,12 +75,12 @@ nav a{
     font-weight: 300;
     color: white;
 }
-.about-text mark{
+mark{
     font-weight: bold;
     background: none;
     color: #f0c36a9f;
 }
-.about-text mark2{
+mark2{
     background: #f0c36a18;
     color: #f0c36a9f;
 }
@@ -97,7 +97,6 @@ nav a{
     color: white;
 }
 .about-text4 {
-    margin-top: -5px;
     margin-left: 50px;
     font-size: 1.2rem;
     font-weight: 300;
@@ -109,7 +108,9 @@ nav a{
     margin-right: auto;
     width: 100%;
 }
-
+highlight{
+    font-weight: bold;
+}
 /* --------------Searchbar------------- */
 .search-wrapper{
     display: flex;

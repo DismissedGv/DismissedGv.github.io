@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinan K Portfolio</title>
+    <link rel="icon" href="../../images/tab-icon.png">
+    <link rel="stylesheet" href="../WebpageStyle.css">
+    <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<!----------------Navigation bar---------------->
+<nav>
+    <a href="../Home.html#about">C# Monobehaviour</a>
+
+    <!-- searchbar-->
+</nav>
+
+<!----------------About---------------->
+<section id="about">
+    <div class="container">
+        <p class="about-text">
+            In C#, particularly within the Unity game engine, <mark>MonoBehaviour</mark> is a base class from which all scripts derive 
+            when attached to GameObjects. It allows scripts to interact with Unity's core functionality, such as lifecycle 
+            methods, physics, rendering, and more.
+        </p>
+
+        <br>
+        <div class="about-text2">Key Features of <mark>MonoBehaviour:</mark></div>
+
+        <p class="about-text3">
+            1. Lifecycle Methods: Unity provides a set of special methods that can be overridden in a <mark>MonoBehaviour</mark> 
+            script to control its behavior at specific points in the game loop. Examples include:
+            <div class="about-text4">
+                <ul>
+                    <li><mark2>Awake():</mark2> Called when the script instance is being loaded.</li>
+                    <li><mark2>Start():</mark2> Called before the first frame update.</li>
+                    <li><mark2>Update():</mark2> Called once per frame.</li>
+                    <li><mark2>FixedUpdate():</mark2> Called at fixed time intervals, typically for physics updates.</li>
+                    <li><mark2>LateUpdate():</mark2> Called once per frame after Update (useful for camera movement or final adjustments).</li>
+                    <li><mark2>OnDestroy():</mark2> Called when the GameObject or script is destroyed.</li>
+            </ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            2. Attachable to GameObjects:
+            <div class="about-text4">
+                <ul>
+                    <li>Scripts that derive from <mark>MonoBehaviour</mark> can be attached to GameObjects in Unity's Scene Hierarchy.</li>
+                    <li>This allows your custom code to interact with GameObjects and components in the Unity scene.</li>
+                </ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            3. Unity-Specific Features:
+            <div class="about-text4">
+                <ul>
+                    <li><highlight>Coroutines:</highlight> Using <mark2>StartCoroutine</mark2> allows you to run code over time (like animations, delays, or timers).</li>
+                    <li><highlight>Input Handling:</highlight> You can check for user inputs directly in the <mark2>Update</mark2> method.</li>
+                    <li><highlight>Physics Interactions:</highlight> Unity provides event functions like <mark2>OnCollisionEnter</mark2> and <mark2>OnTriggerEnter</mark2>.</li>
+            </ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            4. Access to GameObject and Components:
+            <div class="about-text4">
+                <ul>
+                    <li>A <mark>MonoBehaviour</mark> script has direct access to its attached GameObject through the <mark2>gameObject</mark2> and <mark2>transform</mark2> properties.</li>
+                    <li>You can manipulate the GameObject's position, rotation, and components dynamically.</li>
+                </ul>
+            </div>
+        </p>
+
+            <br>
+            <div class="about-text2">Example of MonoBehaviour in a Unity Script:</div>
+            <img class="images" src="../Images/cs/cs_monobehaviour_image.png">
+
+            <br>
+            <div class="about-text2">Explanation of the Script:</div>
+            <div class="about-text4">
+                <ul>
+                    <li><mark2>Start():</mark2> Executes once when the GameObject the script is attached to is enabled in the scene.</li>
+                    <li><mark2>Update():</mark2> Executes every frame. Here, it moves the GameObject forward.</li>
+                </ul>
+            </div>
+
+            <br>
+            <div class="about-text2">Summary:</div>
+            <div class="about-text4">
+                <ul>
+                    <li><mark2>MonoBehaviour</mark2> is the base class for scripts in Unity.</li>
+                    <li>It enables access to Unity's lifecycle methods (like <mark2>Start()</mark2> and <mark2>Update()</mark2>).</li>
+                    <li>It allows scripts to be attached to GameObjects to interact with Unity's systems.</li>
+                    <li>By deriving from <mark2>MonoBehaviour</mark2>, your script becomes a powerful tool to create behavior and control in your Unity scenes.</li>
+                </ul>
+            </div>
+        </p>
+    </div>
+</section>
+
+
+<!----------------Contact---------------->
+<section class="bottom-page">
+    <div class="container">
+        <div class="contact-list">
+            <p><i class="fa-solid fa-envelope"></i><a class="contact-button" href="mailto:Kocsinan958@gmail.com">Kocsinan958@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sinan-koc-47065428b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.gg/h7RcnYuXpp" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/sinan_ckc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Copyright---------------->
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
+    </div>  
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>

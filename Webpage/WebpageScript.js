@@ -5,13 +5,13 @@ const searchInput = document.querySelector("[data-search]")
 
 //-----------------------------------------------------------------Searchable Cards
 const htmlFiles = [
-  { name: "Monobehaviour", keywords: "C#", url: "cs/cs_monobehaviour.html" },
-  { name: "List", keywords: "C#", url: "cs/cs_list.html" },
-  { name: "Arrays", keywords: "C#", url: "cs/cs_arrays.html" },
-  { name: "Dictionary", keywords: "", url: "cs/cs_dictionary.html" },
-  { name: "Hashset", keywords: "C#", url: "cs/cs_hashset.html" },
-  { name: "For Loop", keywords: "C#", url: "cs/cs_for_loop.html" },
-  { name: "While Loop", keywords: "C#", url: "cs/cs_while_loop.html" },
+  { name: "C# Monobehaviour", keywords: "", url: "cs/cs_monobehaviour.html" },
+  { name: "C# List", keywords: "", url: "cs/cs_list.html" },
+  { name: "C# Arrays", keywords: "", url: "cs/cs_arrays.html" },
+  { name: "C# Dictionary", keywords: "", url: "cs/cs_dictionary.html" },
+  { name: "C# Hashset", keywords: "", url: "cs/cs_hashset.html" },
+  { name: "C# For Loop", keywords: "", url: "cs/cs_for_loop.html" },
+  { name: "C# While Loop", keywords: "", url: "cs/cs_while_loop.html" },
   // Add more HTML files to this array as needed
 ];
 
