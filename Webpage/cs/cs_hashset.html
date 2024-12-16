@@ -27,6 +27,7 @@
             Here's a breakdown of what it is and how it works:
         </p>
 
+        <br>
         <div class="about-text2">Key Features of a HashSet:</div>
 
         <p class="about-text3">
@@ -56,11 +57,23 @@
             5. Dynamic Resizing:
             <div class="about-text4"><ul><li>HashSet dynamically resizes its internal structure (a hash table) as more elements are added, maintaining efficiency.</li></ul>
 
+            <br>
             <div class="about-text2">When to Use a HashSet:</div> <!-- Fix position -->
             <ul>
                 <li>When you need to ensure uniqueness in a collection.</li>
                 <li>When fast lookup, insertion, and deletion are required.</li>
                 <li>When the order of elements doesn't matter.</li>
+            </ul>
+
+            <br>
+            <div class="about-text2">Example in C#:</div>
+            <img class="images" src="../images/cs_hashset_image.png">
+
+            <br>
+            <div class="about-text2">HashSet Limitations:</div>
+            <ul>
+                <li>Not thread-safe by default (for concurrent access, alternatives like ConcurrentHashSet or synchronized sets are needed).</li>
+                <li>Hashing introduces overhead, so if your collection is small or performance isn't a concern, a list may be simpler.</li>
             </ul>
         </p>
     </div>
