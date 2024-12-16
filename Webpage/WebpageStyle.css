@@ -102,6 +102,10 @@ mark2{
     font-weight: 300;
     color: white;
 }
+.about-text5 {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
 .images{
     display: block;
     margin-left: auto;

@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn To Code</title>
+    <link rel="icon" href="../../images/tab-icon.png">
+    <link rel="stylesheet" href="../WebpageStyle.css">
+    <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+<!----------------Navigation bar---------------->
+<nav>
+    <a href="../Home.html#about">C# List</a>
+
+    <!-- searchbar-->
+</nav>
+
+<!----------------About---------------->
+<section id="about">
+    <div class="container">
+        <p class="about-text">
+            In C#, a List is a generic collection class provided by the .NET framework that is part of the System.Collections.Generic 
+            namespace. It is used to store and manage a collection of objects of a specific type. Unlike arrays, List<T> is dynamic, 
+            meaning it can grow and shrink in size as needed.
+        </p>
+
+        <br>
+        <div class="about-text2">Key Features of <mark>List:</mark></div>
+
+        <p class="about-text3">
+            1. Generic Type:
+            <div class="about-text4">
+                <ul>
+                    <li><mark2>List&lt;T&gt;:</mark2> uses generics, where <mark2>T</mark2> represents the type of elements stored in the list. It ensures type safety.</li>
+                    <li>Example: <mark2>List&lt;int&gt;</mark2>, <mark2>List&lt;string&gt;</mark2>, or even custom classes like <mark2>List&lt;Employee&gt;</mark2>.</li>
+            </ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            2. Dynamic Sizing:
+            <div class="about-text4">
+                <ul>
+                    <li>Lists automatically resize as elements are added or removed. You do not need to define the size beforehand.</li>
+                </ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            3. Indexed Access:
+            <div class="about-text4">
+                <ul>
+                    <li>You can access elements of the list using an index, just like an array.</li>
+                </ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            4. Built-in Methods:
+            <div class="about-text4">
+                <ul>
+                    <li>Lists provide several methods to manipulate data, such as <mark2>Add()</mark2>, <mark2>Remove()</mark2>, 
+                        <mark2>Insert()</mark2>, <mark2>Sort()</mark2>, <mark2>Find()</mark2>, and many more.</li>
+                </ul>
+            </div>
+        </p>
+        <p class="about-text3">
+            5. Zero-based Indexing:
+            <div class="about-text4">
+                <ul>
+                    <li>Like arrays, Lists also start indexing at <mark2>0</mark2>.</li>
+                </ul>
+            </div>
+        </p>
+
+            <br>
+            <div class="about-text2">Declaration and Initialization:</div>
+            <div class="about-text5">To use a List, you must include the namespace System.Collections.Generic:</div>
+            <img class="images" src="../Images/cs/list/cs_list_image.png">
+            <div class="about-text2">Output:</div>
+            <img class="images" src="../Images/cs/list/cs_list_output_image.png">
+
+            <br><br>
+            <div class="about-text2">Common Operations and Methods:</div>
+            <p class="about-text3">
+                1. Add an Element:
+                <img class="images" src="../Images/cs/list/cs_list_image(1).png">
+            </p>
+            <p class="about-text3">
+                2. Remove an Element:
+                <img class="images" src="../Images/cs/list/cs_list_image(2).png">
+            </p>
+            <p class="about-text3">
+                3. Access by Index:
+                <img class="images" src="../Images/cs/list/cs_list_image(3).png">
+            </p>
+            <p class="about-text3">
+                4. Insert at a Specific Position:
+                <img class="images" src="../Images/cs/list/cs_list_image(4).png">
+            </p>
+            <p class="about-text3">
+                5. Count Elements:
+                <img class="images" src="../Images/cs/list/cs_list_image(5).png">
+            </p>
+            <p class="about-text3">
+                6. Check if an Element Exists:
+                <img class="images" src="../Images/cs/list/cs_list_image(6).png">
+            </p>
+            <p class="about-text3">
+                7.Sorting:
+                <img class="images" src="../Images/cs/list/cs_list_image(7).png">
+            </p>
+            <p class="about-text3">
+                8. Clear the List:
+                <img class="images" src="../Images/cs/list/cs_list_image(8).png">
+            </p>
+
+            <br><br>
+            <div class="about-text2">Declaration and Initialization:</div>
+            <img class="images" src="../Images/cs/list/cs_list_image(9).png">
+            <div class="about-text2">Output:</div>
+            <img class="images" src="../Images/cs/list/cs_list_output_image(1).png">
+        </p>
+
+        <br>
+        <p class="about-text3">
+            When to Use List&lt;T&gt;?
+            <div class="about-text4">
+                <ul>
+                    <li>When you need a collection that can dynamically resize.</li>
+                    <li>When you want to leverage built-in methods for managing collections.</li>
+                    <li>When type safety is important.</li>
+            </ul>
+            </div>
+        </p>
+
+        <br>
+        <p class="about-text3">
+            Namespace and Assembly:
+            <div class="about-text4">
+                <ul>
+                    <li><highlight>Namespace</highlight>: <mark2>System.Collections.Generic</mark2></li>
+                    <li><highlight>Assembly</highlight>: mscorlib.dll</li>
+                </ul>
+            </div>
+        </p>
+
+        <br><br>
+        <p class="about-text">
+            In summary, <mark2>List&lt;T&gt;</mark2> is a versatile and widely-used collection class in C# that provides flexibility, type safety, and a 
+            wide range of functionality for managing collections of objects.
+        </p>
+    </div>
+</section>
+
+
+<!----------------Contact---------------->
+<section class="bottom-page">
+    <div class="container">
+        <div class="contact-list">
+            <p><i class="fa-solid fa-envelope"></i><a class="contact-button" href="mailto:Kocsinan958@gmail.com">Kocsinan958@gmail.com</a></p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/sinan-koc-47065428b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://discord.gg/h7RcnYuXpp" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://www.instagram.com/sinan_ckc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!----------------Copyright---------------->
+    <div class="copyright">
+        <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
+    </div>  
+</section>
+
+<script src="script.js"></script>
+
+</body>
+</html>
