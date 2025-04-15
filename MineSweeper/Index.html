@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MineSweeper</title>
+        <link rel="icon" href="Logo.png">
+        <link rel="stylesheet" href="Style.css">
+        
+        <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+        <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
+        <script src="Script.js" defer></script>
+    </head>
+
+    <body>
+    <!----------------game---------------->
+    <section id="game">
+        <h1> 
+            🚩: <span id="flag-count">0</span>
+            🔔: <span id="timer">0</span>
+        </h1>
+
+        <select id="difficulty-select">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+        <option value="custom">Custom</option>
+        </select>
+        
+        <div id="custom-settings" style="display: none;">
+            Rows: <input type="number" id="custom-rows" value="16" min="2" max="30">
+            Columns: <input type="number" id="custom-columns" value="30" min="2" max="30">
+            Mines: <input type="number" id="custom-mines" value="99" min="1">
+        </div>
+        
+        <br>
+        <br>
+        <div id="board"></div>
+        <br>
+        <button id="restart-button" onclick="RestartGame()">🔄</button>
+        <button id="flag-button">🚩</button>
+    </section>
+
+    <!----------------Contact---------------->
+    <section class="bottom-page">
+        <div class="container">
+            <div class="social-icons">
+                <a href="https://discord.gg/kK9UEebP9y" target="_blank"><i class="fa-brands fa-discord"></i></a>
+                <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+
+        <!----------------Copyright---------------->
+        <div class="copyright">
+            <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
+        </div>  
+    </section>
+
+    </body>
+</html>
