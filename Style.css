@@ -67,12 +67,14 @@ nav p{
     border-radius: 5px;
     padding: 6px 10px 6px 10px;
     color: #f0c36a9f;
+    transition: color 0.3s ease;
     top: -20px;
     margin-top: 71px;
     position: absolute;
 }
 .resume:hover{
     color: #e3d9c6;
+    transition: color 0.3s ease;
 }
 .phone-nav{
     display: none;
