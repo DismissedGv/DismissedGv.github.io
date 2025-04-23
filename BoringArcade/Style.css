@@ -45,12 +45,13 @@ nav{
 }
 nav a{
     font-size: 40px;
-
     color: #234653;
+    transition: color 0.3s ease;
     text-decoration: none;
 }
-nav a:hover{
+nav a:hover {
     color: #d0d0d0;
+    transition: color 0.3s ease;
 }
 nav img{
     height: 100px;
@@ -298,8 +299,10 @@ nav img{
     height: 100%;
     
     cursor: pointer;
+    transition: transform 1s ease;
 }
 .work:hover{
+    transition: transform 1s ease;
     transform: scale(1.05);
     --Games-color:#e3d9c6;
 }

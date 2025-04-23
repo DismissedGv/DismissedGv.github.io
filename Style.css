@@ -299,8 +299,10 @@ nav p{
     height: 100%;
     
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 .work:hover{
+    transition: transform 0.3s ease;
     transform: scale(1.05);
     --Games-color:#e3d9c6;
 }
@@ -393,6 +395,7 @@ nav p{
     align-content: center;
 }
 .education:hover{
+    
     border: 2px solid #F0C46A;
     border-radius: 10px;
 }
@@ -499,9 +502,12 @@ nav p{
     text-decoration: none;
     font-size: 45px;
     margin-right: 15px;
+
     color: #f0c36a9f;
+    transition: color 0.3s ease;
 }
 .social-icons1-a:hover{
+    transition: color 0.3s ease;
     color: #e3d9c6;
 }
 
@@ -518,12 +524,16 @@ nav p{
     text-decoration: none;
     font-size: 30px;
     margin-right: 15px;
+
     color: #ababab;
+
     display: inline-block;
-    transition: transform 0.5s;
+    transition: transform 0.5s ease;
 }
 .social-icons a:hover{
     color: #F0C46A;
+    
+    transition: transform 0.5s ease;
     transform: translateY(-5px);
 }
 
