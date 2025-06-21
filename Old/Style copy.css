@@ -4,39 +4,41 @@
     font-family:  "system-ui";
     box-sizing: border-box;
     scroll-behavior: smooth;
-
-    --dark-blue-color: #1B1F24;
-    --lighter-blue-color: #2B313C;
-    --blue-color: #075FE4;
-    --grey-color: #858A92;
 }
 body{
-    background:  var(--dark-blue-color);
-    color: white;
+    background: #121212;
+    color: #fff;
 }
 #header{
     margin-bottom: 80px;
 }
-mark{
-    background-color: transparent;
-    color: var(--blue-color);
+::-webkit-scrollbar { /* width */
+    width: 10px; 
+}
+::-webkit-scrollbar-track { /* Track */
+    background: #262626; 
+}
+::-webkit-scrollbar-thumb { /* Handle */
+    background: #F0C46A; 
+    border-radius: 10px;
+}
+.container{
+    padding: 10px 20%;
 }
 .sub-title{
     font-size: 40px;
-    font-weight: 550;
-    line-height: 100px;
-    margin-bottom: 10px;
-    text-align: start;
+    font-weight: 600;
+    color: #F0C46A;
+    text-align: center;
 }
 
 /* ============================================================ Navigation ============================================================== */
 nav{
     z-index: 10;
     position: fixed;
-    background-color: #1b1f24f5;
+    background-color: #121212ee;
     width: 100%;
     height: 70px;
-    top: 0;
     
     font-size: 25px;
     font-weight: 500;
@@ -46,57 +48,59 @@ nav{
     word-spacing: 40px;
 }
 nav a{
-    color: var(--grey-color);
+    color: #ababab;
     text-decoration: none;
     transition: color 0.2s ease;
 }
 nav a:hover{
-    color: white;
+    color: #F0C46A;
 }
 nav a.active{
-    color: white;
+    color: #F0C46A;
 }
 
 
 /* ============================================================ About ============================================================== */
 #about{
-    height: 100vh; /* fills full screen height */
-    padding: 60px 340px;
+    padding-top: 180px;
+    padding-bottom: 200px;
 }
 #about img{
-    width: 25%;
-    border-radius: 10%;
-
     position: absolute;
-    right: 15%;
-    top: 30%;
+    left: 350px;
+    top: 150px;
+    width: 18%;
+    border-radius: 10%;
 }
-#about h1{
-    font-size: 90px;
-    font-weight: 550;
-    line-height: 100px;
-
-    margin-top: 20%;
+.about-text{
+    width: 800px;
+    margin-left: 35%;
+    flex-basis: 60%;
+    font-size: 2rem;
+    font-weight: 300;
+    color: #f0c36a9f;
 }
-#about p{
-    width: 60%;
-    font-size: 20px;
-    margin-top: 30px;
-    color: var(--grey-color);
+.header-text h1{
+    font-size: 40px;
+    margin-top: 20px;
+    color: #f7f7f7;
 }
-#about hr{
-    width: 55%;
-    margin-top: 40px;
-    border-color: var(--grey-color);
+.header-text h1 span{
+    font-size: 60px;
+    color: #F0C46A;
+}
+.header-text p{
+    margin-top: 10px;
+    color: #ababab;
+    font-size: 40px;
 }
 
 /* ============================================================ Projects ============================================================== */
 #projects{
-    height: 100vh + auto; /* fills full screen height */
-    padding: 60px 340px;
-
-    --Games-color: white;
     --project-video-width: 400px;
+    --Games-color: #F0C46A;
+
+    padding: 80px 0;   
 }
 .work-list{
     display: grid;
@@ -106,17 +110,17 @@ nav a.active{
     margin-top: 20px;
 }
 .work{
+    border-radius: 0px;
     width: 100%;
     height: 100%;
     
     cursor: pointer;
     transition: transform 0.3s ease;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    border-radius: 10px;
 }
 .work:hover{
-    --Games-color: var(--blue-color);
+    transition: transform 0.3s ease;
     transform: scale(1.05);
+    --Games-color:#e3d9c6;
 }
 .work video{
     width: var(--project-video-width);
@@ -132,7 +136,7 @@ nav a.active{
     height: 40px;
     padding: 10px 0px;
     font-size: 14px;
-    background-color: #2B313Cc5;
+    background-color: #232323c5;
     position:absolute;
     margin-top: -40px;
 }
@@ -143,8 +147,8 @@ nav a.active{
     width: var(--project-video-width);
     height: 200px;
     padding: 10px 20px;
-    
-    background-color: var(--lighter-blue-color);
+    color: #d4d4d4;
+    background-color: #232323;
 
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -153,18 +157,13 @@ nav a.active{
     color: var(--Games-color);
     font-size: 1.5rem;
 }
-.text-box h2{
+.text-box h1{
     color: var(--Games-color);
     padding-top: 5px;
     font-size: 15px;
-    transition: transform 0.3s ease;
 }
-.text-box h2 i{
-    padding-left: 10px;
-    transition: transform 0.5s ease;
-}
-.work:hover .text-box h2 i {
-  transform: translateX(10px);
+.text-box h1 i{
+    padding-left: 5px;
 }
 .text-box p{
     font-size: 15px;
@@ -175,163 +174,67 @@ nav a.active{
     align-items: center;
 }
 
-/* ============================================================ Experience ============================================================== */
+/* ============================================================ Education / Work Experience ============================================================== */
 #experience{
-    height: 100vh; /* fills full screen height */
-    padding: 60px 340px;
-
-    background-color: var(--dark-blue-color);
-}
-#experience hr{
-    border-color: var(--grey-color);
+    padding-top: 80px;
 }
 .list{
     display: grid;
     grid-template-columns: auto;
     justify-content:left;
     grid-gap: 50px;
+    margin-top: 20px;
 }
 .box{
     width: 1171px;
-    height: auto;
-    color: var(--grey-color);
+    height: 150px;
+    background-color: #252423;
+    color: #ababab;
     border-radius: 5px;
 
-    display: grid;
-    grid-template-columns: auto  auto auto;
+    padding-left: 5%;
+    margin: 0 0 -30px -25px;
+    align-content: center;
 }
 .box h2{
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 600;
-    color: white;
 }
 .box p{
     font-size: 20px;
     font-weight: 100;
+    
+    margin-bottom: 20px;
 }
 .box p1{
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 100;
-    justify-self: end;
-    color: white;
 }
-
 /* ============================================================ Skills ============================================================== */
 #skills{
-    height: 100vh; /* fills full screen height */
-    padding: 60px 0;
-}
-#skills h1{
-    font-size: 40px;
-    font-weight: 550;
-    line-height: 100px;
-    margin-bottom: 10px;
-    text-align: center;
-}
-#skills a{
-    text-decoration: none;
-}
-.scroller[data-animated=true]{
-    overflow: hidden;
-    -webkit-mask:  linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-.scroller[data-animated=true] .skills-list{
-    flex-wrap: nowrap;
-    width: max-content;
-    animation: scroll 100s linear infinite;
-}
-.scroller2[data-animated=true]{
-    overflow: hidden;
-    -webkit-mask:  linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-    mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-.scroller2[data-animated=true] .skills-list{
-    flex-direction: row-reverse;
-    width: max-content;
-    animation: scroll2 100s linear infinite;
+    padding: 80px 0;
 }
 .skills-list{
-    overflow:hidden;
     display: flex;
-    gap: 20px;
-    padding: 30px 0;
-}
-.skill-box{
-    height: 300px;
-    width: 200px;
-
-    background-color: var(--lighter-blue-color);
-    border-radius: 10px;
-    
-    background: linear-gradient(200deg, #1b1f24, #2b313c);
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-
-    transition: transform 0.5s;
-}
-.skill-box:hover{
-    transform: scale(1.05);
-}
-#skills i{
-    height: 100px;
-    width: 100px;
-    font-size: 50px;
-    border-radius: 100%;
-    margin-left: 50px;
+    flex-wrap: wrap;
+    grid-gap: 10px;
     margin-top: 20px;
-
-    color: white;
-    background-color: var(--blue-color);
-
-    display: grid;
-    justify-content: center;
-    align-items: center;
-}
-.skills-list h1{
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
 }
 .skills-list p{
-    font-size: 18px;
-    font-weight: bold;
-    position: absolute;
-    bottom: 40px;
-    margin-left: 10px;
-    color: white;
-}
-#skills p i{
-    height: 0;
-    width: 0;
-    font-size: 20px;
-    font-weight: bold;
+    border: #F0C46A 1px solid;
+    border-radius: 5px;
+    padding: 6px;
 
-    background-color: transparent;
-    color: white;
-    display: inline;
-    margin-left: 10px;
-}
-.skill-box:hover p i {
-  transform: translateX(10px);
-}
-@keyframes scroll{
-    to {
-        transform: translateX(calc(-50% - 0.5rem));
-    }
-}
-@keyframes scroll2{
-    from {
-    transform: translateX(calc(-50% - 0.5rem));
-  }
-  to {
-    transform: translateX(0);
-  }
+    color: #F0C46A;
+    font-size: 18px;
+    font-weight: 400;
+
+    transition: background 0.5s, transform 0.5s;
 }
 
 /* ============================================================ Contact ============================================================== */
 #contact{
-    height: auto; /* fills full screen height */
-    padding: 60px 340px;
+    padding: 80px 0;
 }
 .contact-list{
     display: flex;
