@@ -152,12 +152,13 @@ nav a.active{
 .text-box h3{
     color: var(--Games-color);
     font-size: 1.5rem;
+    transition: color 0.3s ease;
 }
 .text-box h2{
     color: var(--Games-color);
     padding-top: 5px;
     font-size: 15px;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease;
 }
 .text-box h2 i{
     padding-left: 10px;
@@ -247,7 +248,7 @@ nav a.active{
     mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
 }
 .scroller2[data-animated=true] .skills-list{
-    flex-direction: row-reverse;
+    flex-wrap: nowrap;
     width: max-content;
     animation: scroll2 100s linear infinite;
 }
@@ -260,6 +261,7 @@ nav a.active{
 .skill-box{
     height: 300px;
     width: 200px;
+    color: white;
 
     background-color: var(--lighter-blue-color);
     border-radius: 10px;
@@ -280,7 +282,6 @@ nav a.active{
     margin-left: 50px;
     margin-top: 20px;
 
-    color: white;
     background-color: var(--blue-color);
 
     display: grid;
@@ -290,15 +291,14 @@ nav a.active{
 .skills-list h1{
     font-size: 40px;
     font-weight: bold;
-    color: white;
 }
 .skills-list p{
     font-size: 18px;
     font-weight: bold;
-    position: absolute;
     bottom: 40px;
-    margin-left: 10px;
-    color: white;
+    margin-left: 15px;
+
+    transition: color 0.3s ease;
 }
 #skills p i{
     height: 0;
@@ -307,12 +307,17 @@ nav a.active{
     font-weight: bold;
 
     background-color: transparent;
-    color: white;
-    display: inline;
-    margin-left: 10px;
+    display: inline-block;
+    margin-left: 5px;
+    
+    transition: transform 0.5s ease;
 }
-.skill-box:hover p i {
-  transform: translateX(10px);
+.skill-box:hover p i{
+    transform: translateX(10px);
+    color: var(--blue-color);
+}
+.skill-box:hover p{
+    color: var(--blue-color);
 }
 @keyframes scroll{
     to {
@@ -330,7 +335,7 @@ nav a.active{
 
 /* ============================================================ Contact ============================================================== */
 #contact{
-    height: auto; /* fills full screen height */
+    height: 70vh; /* fills full screen height */
     padding: 60px 340px;
 }
 .contact-list{
