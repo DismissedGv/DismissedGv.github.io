@@ -56,7 +56,12 @@ nav a:hover{
 nav a.active{
     color: white;
 }
-
+.nav-resume{
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    transition: color 0.3s ease;
+}
 
 /* ============================================================ About ============================================================== */
 #about{
@@ -72,7 +77,7 @@ nav a.active{
     top: 30%;
 }
 #about h1{
-    font-size: 90px;
+    font-size: 85px;
     font-weight: 550;
     line-height: 100px;
 
@@ -88,6 +93,25 @@ nav a.active{
     width: 55%;
     margin-top: 40px;
     border-color: var(--grey-color);
+}
+.about-social-icons{
+    margin-top: 20px;
+    margin-left: 100px;
+}
+.about-social-icons a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-left: 15px;
+
+    color: var(--grey-color);
+
+    display: inline-block;
+    transition: transform 0.5s ease, color 0.3s ease;
+}
+.about-social-icons a:hover{
+    color: var(--blue-color);
+    transition: transform 0.5s ease, color 0.3s ease;
+    transform: translateY(-5px);
 }
 
 /* ============================================================ Projects ============================================================== */
@@ -193,7 +217,7 @@ nav a.active{
     grid-gap: 50px;
 }
 .box{
-    width: 1171px;
+    width: 1000px;
     height: auto;
     color: var(--grey-color);
     border-radius: 5px;
@@ -336,57 +360,74 @@ nav a.active{
 /* ============================================================ Contact ============================================================== */
 #contact{
     height: 70vh; /* fills full screen height */
-    padding: 60px 340px;
+    padding: 60px 20px;
+    padding-top: 150px;
+}
+#contact h1{
+    margin-left: -430px;
+}
+#contact hr{
+    margin-bottom: 70px;
+    -webkit-mask:  linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+#contact img{
+    width: 200px;
+    border-radius: 100%;
+    margin-left: 50px;
 }
 .contact-list{
-    display: flex;
+    display: grid;
     justify-content: center;
+    align-items: center;
+    grid-template-columns: auto auto;
+
     grid-gap: 20px;
 }
 .contact-list p{
-    margin-top: 20px;
+    margin-bottom: -100px;
+    margin-left: -100px;
+    color: var(--grey-color);
 }
 .contact-list p i{
-    color: #ababaa;
+    color: var(--grey-color);
     margin-right: 10px;
     font-size: 40px;
 }
 .contact-button{
     text-decoration: none;
-    color: white;
+    color: var(--grey-color);
     transition: color 0.3s ease;
 }
 .contact-button:hover{
-    color: #F0C46A;
+    color: var(--blue-color);
 }
 .contact-button i{
     text-decoration: none;
-    color: white;
     transition: color 0.3s ease;
 }
 .contact-button i:hover{
-    color: #F0C46A;
+    color: var(--blue-color);
 }
 .social-icons{
-    margin-top: 20px;
-    margin-left: 100px;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
+    margin-right: 400px;
 }
 .social-icons a{
     text-decoration: none;
     font-size: 40px;
     margin-left: 15px;
 
-    color: #ababab;
+    color: var(--grey-color);
 
     display: inline-block;
-    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, color 0.3s ease;
 }
 .social-icons a:hover{
-    color: #F0C46A;
-    transition: transform 0.5s ease;
+    color: var(--blue-color);
+    transition: transform 0.5s ease, color 0.3s ease;
     transform: translateY(-5px);
+}
+#contact a:hover i{
+    color: var(--blue-color);
 }
 
 /* ============================================================ Copyright ============================================================== */
@@ -394,13 +435,12 @@ nav a.active{
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    background: #262626;
+    background: var(--lighter-blue-color);
     font-weight: 600;
-    margin-top: 20px;
     font-size: 10px;
 }
 .copyright i{
-    color: #F0C46A;
+    color: var(--blue-color);
 }
 
 /* ============================================================ Slider ============================================================== */
