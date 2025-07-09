@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family:  "system-ui";
+    font-family: "Quicksand", sans-serif;
     box-sizing: border-box;
     scroll-behavior: smooth;
 
@@ -203,7 +203,7 @@ nav a.active{
 /* ============================================================ Experience ============================================================== */
 #experience{
     height: 100vh; /* fills full screen height */
-    padding: 60px 340px;
+    padding: 60px 23%;
 
     background-color: var(--dark-blue-color);
 }
