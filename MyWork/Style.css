@@ -12,7 +12,7 @@
 }
 body{
     background:  var(--dark-blue-color);
-    color: white;
+    color: var(--grey-color);
 }
 #header{
     margin-bottom: 80px;
@@ -123,6 +123,9 @@ nav a.active{
 .game-context1 p{
     padding-bottom: 20px;
 }
+.game-context1 h1{
+    color: white;
+}
 .game-context2{
     width: 575px;
     height: auto;
@@ -138,6 +141,7 @@ nav a.active{
 }
 .game-context2 h1{
     padding-top: 20px;
+    color: white;
 }
 .game-introduction{
     font-size: 20px;
@@ -155,6 +159,7 @@ nav a.active{
 }
 .game-sub-title{
     margin-top: 40px;
+    color: white;
     margin-bottom: 20px;
 }
 

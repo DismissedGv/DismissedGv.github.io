@@ -134,13 +134,17 @@ nav a.active{
     height: 100%;
     
     cursor: pointer;
-    transition: transform 0.3s ease;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
+    transition: transform 1s ease;
 }
 .work:hover{
     --Games-color: var(--blue-color);
     transform: scale(1.05);
+}
+.work:active {
+    transition: transform 0.1s ease;
+    transform: scale(0.95);
 }
 .work video{
     width: var(--project-video-width);
@@ -186,18 +190,18 @@ nav a.active{
 }
 .text-box h2 i{
     padding-left: 10px;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
 }
 .work:hover .text-box h2 i {
   transform: translateX(10px);
 }
 .text-box p{
-    font-size: 15px;
-    font-weight: 100;
+    font-size: 18px;
 
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-top: 5px;
 }
 
 /* ============================================================ Experience ============================================================== */
@@ -206,6 +210,9 @@ nav a.active{
     padding: 60px 23%;
 
     background-color: var(--dark-blue-color);
+}
+#experience h1{
+    text-align: center;
 }
 #experience hr{
     border-color: var(--grey-color);
@@ -229,16 +236,27 @@ nav a.active{
     font-size: 30px;
     font-weight: 600;
     color: white;
+    width: 40%;
 }
 .box p{
     font-size: 20px;
     font-weight: 100;
+    width: 500px;
+    position: absolute;
+    justify-self: center;
+    align-self: center;
 }
 .box p1{
     font-size: 20px;
     font-weight: 100;
+    position: absolute;
     justify-self: end;
     color: white;
+}
+.box p2{
+    position: absolute;
+    justify-self: start;
+    margin-top: -20px;
 }
 
 /* ============================================================ Skills ============================================================== */
