@@ -31,7 +31,7 @@ window.addEventListener("scroll", () => {
     });
 });
 
-// ============================================================ Skills ==============================================================
+// ============================================================ Skills Scrollers ==============================================================
 const allScrollers = [
   ...document.querySelectorAll(".scroller"),
   ...document.querySelectorAll(".scroller2"),
@@ -43,16 +43,20 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
 function addAnimation() {
     allScrollers.forEach((scroller) => {
+        const inner = scroller.querySelector(".skills-list");
+        let totalWidth = inner.scrollWidth;
+        const containerWidth = scroller.offsetWidth;
+
+        // Clone repeatedly until the list is long enough
+        while (totalWidth < containerWidth * 2) {
+            Array.from(inner.children).forEach((item) => {
+                const clone = item.cloneNode(true);
+                clone.setAttribute("aria-hidden", true);
+                inner.appendChild(clone);
+            });
+            totalWidth = inner.scrollWidth;
+        }
+
         scroller.setAttribute("data-animated", "true");
-
-        const scrollerInner = scroller.querySelector(".skills-list");
-        const scrollerContent = Array.from(scrollerInner.children);
-
-        // Clone elements for infinite effect
-        scrollerContent.forEach((item) => {
-            const duplicatedItem = item.cloneNode(true);
-            duplicatedItem.setAttribute("aria-hidden", true);
-            scrollerInner.appendChild(duplicatedItem);
-        });
     });
 }

@@ -13,315 +13,221 @@
     <body>
 <!-- ============================================================ Navigation ============================================================== -->
         <nav>
-            <a href="#about" class="active">Home</a>
-            <a href="#projects">Projects</a>
-            <a href="#experience">Experience</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+            <div class="nav-left">
+                <a href="#about" class="name">Sinan Koç</a>
+            </div>
 
-            <p><a class="nav-resume" target="_blank" href="https://docs.google.com/document/d/1Nb6-c-W0KDgFF9a3No-v7_ArTD4zfoR2gH79aMNtgBw/edit?usp=sharing"></i>Resume</a></p>
+            <div class="nav-links">
+                <a href="#about" class="active">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
+            </div>
+
+            <a class="nav-resume" target="_blank" href="https://docs.google.com/document/d/1Nb6-c-W0KDgFF9a3No-v7_ArTD4zfoR2gH79aMNtgBw/edit?usp=sharing">Resume</a>
         </nav>
 
 <!-- ============================================================ About ============================================================== -->
-            <section id="about">
-                <h1>
-                    I'm Sinan, a <br>
-                    Game Developer
-                </h1>
-                <p>
-                    I'm passionate about the video game industry, with a focus on gameplay systems, 
-                    clean code architecture, and effective team communication.
-                </p>
-                <img src="images/user2.jpg">
+        <section id="about">
+            <div class="card">
+                <div class="flex-col-1">
 
-                <hr>
-                <!-- <i class="fa-solid fa-angle-down fa-bounce"></i> -->
+                    <h1> Sinan Koç </h1>
+
                     <div class="about-social-icons">
+                        <a href="mailto:Kocsinan958@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
                         <a href="https://www.linkedin.com/in/sinan-koc-47065428b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
                         <a href="https://discord.com/users/userid=372691024444784641" target="_blank"><i class="fa-brands fa-discord"></i></a>
                         <a href="https://www.instagram.com/sinan_ckc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
                         <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
                         <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
                     </div>
-            </section>
-
-<!-- ============================================================ Projects ============================================================== -->
-            <section id="projects">
-                <h1 class="sub-title"><mark><</mark>Projects<mark>/></mark></h1>
-                <div class="work-list">
-                    <div class="work" id="WrathfulHedgehog" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
-                        <video autoplay loop muted><source src="Videos/WrathfulHedgehogVideo.mp4" type="video/mp4"></video>
-                        <div class="work-info">
-                            <i class="fa-solid fa-users"></i> 14 
-                            <i class="fa-solid fa-clock"></i> 2.5 Weeks 
-                            <i class="fa-solid fa-screwdriver-wrench"></i> Unity
-                        </div>
-                        <div class="text-box">
-                            <h3>Wrathful Hedgehog</i></h3>
-                            <p>AI & Gameplay Programmer <br><br> 
-                                It's a first person horde shooter game where you play as a wrathful hedgehog trying to defend it's home from dangerous foxes.
-                            </p>
-                            <h2>View Project<i class="fa-solid fa-arrow-right"></i></h2>
-                        </div>
-                    </div>
-                    <div class="work" id="IronLeague" onclick="window.location.href='MyWork/IronLeague.html'">
-                        <video autoplay loop muted><source src="Videos/IronLeagueVideo.mp4" type="video/mp4"></video>
-                        <div class="work-info">
-                            <i class="fa-solid fa-users"></i> 17 
-                            <i class="fa-solid fa-clock"></i> 4 Weeks 
-                            <i class="fa-solid fa-screwdriver-wrench"></i> Unity
-                        </div>
-                        <div class="text-box">
-                            <h3>Iron League</i></h3>
-                            <p>Gameplay Programmer & Lead <br><br>This was my first take on a mobile and co-op game. 
-                                You play as either the Ironer or the Thrower, trying to get as many points before your two minutes of alloted time runs out.
-                            </p>
-                            <h2>View Project<i class="fa-solid fa-arrow-right"></i></h2>
-                        </div>
-                    </div>
-                    <div class="work" id="BiochemNightshift" onclick="window.location.href='MyWork/BiochemNightshift.html'">
-                        <video autoplay loop muted><source src="Videos/BiochemNightshiftVideo.mp4" type="video/mp4"></video>
-                        <div class="work-info">
-                            <i class="fa-solid fa-users"></i> 16 
-                            <i class="fa-solid fa-clock"></i> 7 Weeks 
-                            <i class="fa-solid fa-screwdriver-wrench"></i> Unreal
-                        </div>
-                        <div class="text-box">
-                            <h3>Biochem Nightshift</h3>
-                            <p>Product Owner & Gameplay Programmer <br><br>It's a horror and puzzle game where you play as Fredrik, 
-                                a process operator, navigating the dangerous corridors of Ulrich's Medical Science. 
-                            </p>
-                            <h2>View Project<i class="fa-solid fa-arrow-right"></i></h2>
-                        </div>
-                    </div>
-                    <div class="work" id="DeleteTheDevs" onclick="window.location.href='MyWork/DeleteTheDevs.html'">
-                        <video autoplay loop muted><source src="Videos/DeleteTheDevsVideo.mp4" type="video/mp4"></video>
-                        <div class="work-info">
-                            <i class="fa-solid fa-users"></i> 11 
-                            <i class="fa-solid fa-clock"></i> 4 Weeks 
-                            <i class="fa-solid fa-screwdriver-wrench"></i> Unreal
-                        </div>
-                        <div class="text-box">
-                            <h3>Marked For Deletion</i></h3>
-                            <p>Gameplay & Animation Programmer <br><br>It's a game about deleting the developers of the game and 
-                                as you delete the crew, you also delete the game which is the end goal.
-                            </p>
-                            <h2>View Project<i class="fa-solid fa-arrow-right"></i></h2>
-                        </div>
-                    </div>
-                    <!-- <div class="work" id="BoringArcade" onclick="window.location.href='MyWork/BoringArcade.html'">
-                        <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
-                        <div class="work-info">
-                            <i class="fa-solid fa-users"></i> 1 
-                            <i class="fa-solid fa-clock"></i> None
-                            <i class="fa-solid fa-screwdriver-wrench"></i> Java
-                        </div>
-                        <div class="text-box">
-                            <h3>Boring Arcade</i></h3>
-                            <p>Developer <br><br>My work done on minecraft. I have created a few stuff for Minecraft java Edition (Mods, Datapacks, Resource packs, etc.)
-                            </p>
-                            <h2>View Project<i class="fa-solid fa-arrow-right"></i></h2>
-                        </div>
-                    </div> -->
                 </div>
-            </section>
 
-<!-- ============================================================ Experience ============================================================== -->
-            <section id="experience">
-                <h1 class="sub-title"><mark><</mark>My Experience<mark>/></mark></h1>
-                <div class="list">
-                    <hr>
-                    <div class="box">
-                        <h2>Grey Towers</h2>
-                        <p>6-month game development internship focused on gameplay</p>
-                        <p1>19 MAY 2025 <mark>/</mark> 26 DEC 2025</p1>
-                        <p2>Work</p2>
-                    </div>
-                    <hr>
-                    <div class="box">
-                        <h2>FutureGames</h2>
-                        <p>Higher Vocational Education Diploma, Game Programming</p>
-                        <p1>2023 <mark>/</mark> 2025</p1>
-                        <p2>Education</p2>
-                    </div>
-                    <hr>
-                    <div class="box">
-                        <h2>Acino</h2>
-                        <p>1-month summer job assisting with the development of an indie game</p>
-                        <p1>JUN 2023</p1>
-                        <p2>Work</p2>
-                    </div>
-                    <hr>
-                    <div class="box">
-                        <h2>Maja Beskow gymnasiet</h2>
-                        <p>Engineering Degree, Programming Essentials</p>
-                        <p1>2020 <mark>/</mark> 2023</p1>
-                        <p2>Education</p2>
-                    </div>
-                </div>
-            </section>
+                <div class="location"><i class="fa-solid fa-location-dot"></i> Umeå, Sweden </div>
+
+                <p>
+                    I'm 21-year-old Game Developer. I have been programming for more than 5 years.
+                    With a focus on clean code architecture, and effective team communication.
+                </p>
+            </div>
+        </section>
 
 <!-- ============================================================ Skills ============================================================== -->
-            <section id="skills">
-                <h1><mark><</mark>Technical Experience<mark>/></mark></h1>
-                <div class="scroller"> 
-                    <div class="skills-list">
-                        <a  class="skill-box" target="_blank" href='https://www.python.org/downloads/'>
-                            <i class="fa-brands fa-python"></i>
-                            <h1>Python</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://code.visualstudio.com/download'>
-                            <i class="fa-solid fa-c"></i>
-                            <h1>C#</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://www.java.com/en/download/manual.jsp'>
-                            <i class="fa-brands fa-java"></i>
-                            <h1>Java</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://code.visualstudio.com/download'>
-                            <i class="fa-brands fa-js"></i>
-                            <h1>Javascript</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://code.visualstudio.com/download'>
-                            <i class="fa-brands fa-html5"></i>
-                            <h1>HTML</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://code.visualstudio.com/download'>
-                            <i class="fa-brands fa-css"></i>
-                            <h1>CSS</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://www.unrealengine.com/en-US/download'>
-                            <i class="fa-solid fa-gear"></i>
-                            <h1>Unreal</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://unity.com/download'>
-                            <i class="fa-brands fa-unity"></i>
-                            <h1>Unity</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://desktop.github.com/download/'>
-                            <i class="fa-brands fa-github"></i>
-                            <h1>Github</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://www.perforce.com/p/vcs/free-version-control?utm_source=googleadwords&utm_medium=cpc&utm_campaign=VCS-Branded-Perforce-RoW&utm_adgroup=Perforce-RoW-Trial-Search&utm_term=perforce%20download&gad_source=1&gad_campaignid=6657281210&gclid=Cj0KCQjw097CBhDIARIsAJ3-nxecDFXjG2ZP82n3Nbs9WEYE0zqNECtnZkMMZdajp28MNqMUK-TaIRsaAkUPEALw_wcB'>
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <h1>Perforce</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://git-fork.com'>
-                            <i class="fa-solid fa-code-fork"></i>
-                            <h1>Fork</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://git-scm.com/downloads'>
-                            <i class="fa-brands fa-git"></i>
-                            <h1>Git</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                    </div>
+        <section id="skills">
+            <h1>Tech Stack</h1>
+            <div class="scroller" data-animated="true">
+                <div class="skills-list">
+                    <span class="skill"><i class="fa-solid fa-c"></i>C#</span>
+                    <span class="skill"><i class="fa-brands fa-java"></i>Java</span>
+                    <span class="skill"><i class="fa-brands fa-js"></i>JavaScript</span>
+                    <span class="skill"><i class="fa-solid fa-square"></i>TypeScript</span>
+                    <span class="skill"><i class="fa-brands fa-python"></i>Python</span>
+                    <span class="skill"><i class="fa-brands fa-html5"></i>HTML</span>
+                    <span class="skill"><i class="fa-brands fa-css3"></i>CSS</span>
                 </div>
-                <div class="scroller2"> 
-                    <div class="skills-list">
-                        <a  class="skill-box" target="_blank" href='https://www.python.org/downloads/'>
-                            <i class="fa-brands fa-python"></i>
-                            <h1>Python</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://code.visualstudio.com/download'>
-                            <i class="fa-solid fa-c"></i>
-                            <h1>C#</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://www.java.com/en/download/manual.jsp'>
-                            <i class="fa-brands fa-java"></i>
-                            <h1>Java</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://code.visualstudio.com/download'>
-                            <i class="fa-brands fa-js"></i>
-                            <h1>Javascript</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://code.visualstudio.com/download'>
-                            <i class="fa-brands fa-html5"></i>
-                            <h1>HTML</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://code.visualstudio.com/download'>
-                            <i class="fa-brands fa-css"></i>
-                            <h1>CSS</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://www.unrealengine.com/en-US/download'>
-                            <i class="fa-solid fa-gear"></i>
-                            <h1>Unreal</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://unity.com/download'>
-                            <i class="fa-brands fa-unity"></i>
-                            <h1>Unity</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://desktop.github.com/download/'>
-                            <i class="fa-brands fa-github"></i>
-                            <h1>Github</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://www.perforce.com/p/vcs/free-version-control?utm_source=googleadwords&utm_medium=cpc&utm_campaign=VCS-Branded-Perforce-RoW&utm_adgroup=Perforce-RoW-Trial-Search&utm_term=perforce%20download&gad_source=1&gad_campaignid=6657281210&gclid=Cj0KCQjw097CBhDIARIsAJ3-nxecDFXjG2ZP82n3Nbs9WEYE0zqNECtnZkMMZdajp28MNqMUK-TaIRsaAkUPEALw_wcB'>
-                            <i class="fa-solid fa-laptop-code"></i>
-                            <h1>Perforce</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://git-fork.com'>
-                            <i class="fa-solid fa-code-fork"></i>
-                            <h1>Fork</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                        <a  class="skill-box" target="_blank" href='https://git-scm.com/downloads'>
-                            <i class="fa-brands fa-git"></i>
-                            <h1>Git</h1>
-                            <p>Download Now <i class="fa-solid fa-arrow-right"></i></p>
-                        </a>
-                    </div>
-                </div>
-            </section>
+            </div>
 
-<!-- ============================================================ Contact ============================================================== -->
-            <section id="contact">
-                <hr>
-                <div class="contact-list">
-                <img src="images/user2.jpg">
-                <h1 class="sub-title">Sinan Koc</h1>
-                    <div class="social-icons">
-                        <a href="https://www.linkedin.com/in/sinan-koc-47065428b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://discord.com/users/userid=372691024444784641" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://www.instagram.com/sinan_ckc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                    <div>
-                        <p><a class="contact-button" href="mailto:Kocsinan958@gmail.com"><i class="fa-solid fa-envelope"></i>Kocsinan958@gmail.com</a></p>
-                        <p><i class="fa-solid fa-square-phone"></i>0709596412</p>
-                        <p><a class="contact-button" target="_blank" href="https://docs.google.com/document/d/1Nb6-c-W0KDgFF9a3No-v7_ArTD4zfoR2gH79aMNtgBw/edit?usp=sharing"><i class="fa-solid fa-file"></i>Resume</a></p>
-                    </div>
+            <div class="scroller scroller2" data-animated="true">
+                <div class="skills-list">
+                    <span class="skill"><i class="fa-solid fa-gear"></i>Unreal</span>
+                    <span class="skill"><i class="fa-brands fa-unity"></i>Unity</span>
+                    <span class="skill"><i class="fa-brands fa-github"></i>GitHub</span>
+                    <span class="skill"><i class="fa-solid fa-laptop-code"></i>Perforce</span>
+                    <span class="skill"><i class="fa-solid fa-code-fork"></i>Fork</span>
+                    <span class="skill"><i class="fa-brands fa-git"></i>Git</span>
                 </div>
-            </section>
+            </div>
+        </section>
+
+<!-- ============================================================ Experience ============================================================== -->
+    <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="timeline">
+            <div class="entry">
+            <div class="dot"></div>
+            <div class="content">
+                <h2><a href="https://www.greytowerstudios.com/" target="_blank" class="experience-link">Grey Tower Studios</a></h2>
+                <p class="position">Gameplay Developer</p>
+                <p class="meta">19 May 2025 - 26 Dec 2025</p>
+                <p class="desc">
+                    6-month game development internship focused on gameplay
+                </p>
+            </div>
+            </div>
+
+            <div class="entry">
+            <div class="dot"></div>
+            <div class="content">
+                <h2>Future Games</h2>
+                <p class="position">Gameplay Developer</p>
+                <p class="meta">2023 - 2025</p>
+                <p class="desc">
+                    Higher Vocational Education Diploma, Game Programming
+                </p>
+            </div>
+            </div>
+
+            <div class="entry">
+            <div class="dot"></div>
+            <div class="content">
+                <h2>Acino</h2>
+                <p class="position">Gameplay Developer</p>
+                <p class="meta">Jun 2023</p>
+                <p class="desc">
+                    This was my real first hand experience in the industry as a 
+                    summer job assisting with the development of an indie game
+                </p>
+            </div>
+        </div>
+
+        <div class="entry">
+            <div class="dot"></div>
+                <div class="content">
+                    <h2>Maja Beskow</h2>
+                    <p class="position">Programming Essentials</p>
+                    <p class="meta">2020 - 2023</p>
+                    <p class="desc">
+                        Computer Science Degree
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ============================================================ Projects ============================================================== -->
+    <section id="projects">
+        <h1>My Work</h1>
+        <div class="work-list">
+
+            <div class="work" id="WrathfulHedgehog" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
+                <video autoplay loop muted>
+                    <source src="Videos/WrathfulHedgehogVideo.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h3>Wrathful Hedgehog</h3>
+                    <p>AI & Gameplay Programmer <br><br>
+                        It's a first-person horde shooter game where you play as a wrathful hedgehog trying to defend its home from dangerous foxes.
+                    </p>
+                    <div class="learn-more">Learn more<i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+
+            <div class="work" id="IronLeague" onclick="window.location.href='MyWork/IronLeague.html'">
+                <video autoplay loop muted>
+                    <source src="Videos/IronLeagueVideo.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h3>Iron League</h3>
+                    <p>Gameplay Programmer & Lead <br><br>
+                        It's a horror and puzzle game where you play as Fredrik, a process operator, navigating the dangerous corridors of Ulrich's Medical Science.
+                    </p>
+                    <div class="learn-more">Learn more<i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+
+            <div class="work" id="BiochemNightshift" onclick="window.location.href='MyWork/BiochemNightshift.html'">
+                <video autoplay loop muted>
+                    <source src="Videos/BiochemNightshiftVideo.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h3>Biochem Nightshift</h3>
+                    <p>Product Owner & Gameplay Programmer <br><br>
+                        It's a horror and puzzle game where you play as Fredrik, a process operator, navigating the dangerous corridors of Ulrich's Medical Science.
+                    </p>
+                    <div class="learn-more">View Project<i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+
+            <div class="work" id="DeleteTheDevs" onclick="window.location.href='MyWork/DeleteTheDevs.html'">
+                <video autoplay loop muted>
+                    <source src="Videos/DeleteTheDevsVideo.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h3>Marked For Deletion</h3>
+                    <p>Gameplay & Animation Programmer <br><br>
+                        It's a game about deleting the developers of the game. As you delete the crew, you also delete the game which is the end goal.
+                    </p>
+                    <div class="learn-more">View Project<i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+
+            <div class="work" id="Howl" onclick="window.location.href='MyWork/Howl.html'">
+                <video autoplay loop muted>
+                    <source src="Videos/VideoExample.mp4" type="video/mp4">
+                </video>
+                <div class="overlay">
+                    <h3>Boring Arcade</h3>
+                    <p>Developer <br><br>
+                        My work done on Minecraft. I have created a few things for Minecraft Java Edition (Mods, Datapacks, Resource packs, etc.)
+                    </p>
+                    <div class="learn-more">View Project<i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+            </div>
+
+
+            <!-- <div class="work" id="BoringArcade" onclick="window.location.href='MyWork/BoringArcade.html'">
+                <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
+                <div class="work-info">
+                    <i class="fa-solid fa-users"></i> 1 
+                    <i class="fa-solid fa-clock"></i> None
+                    <i class="fa-solid fa-screwdriver-wrench"></i> Java
+                </div>
+                <div class="text-box">
+                    <h3>Boring Arcade</i></h3>
+                    <p>Developer <br><br>My work done on minecraft. I have created a few stuff for Minecraft java Edition (Mods, Datapacks, Resource packs, etc.)
+                    </p>
+                    <h2>View Project<i class="fa-solid fa-arrow-right"></i></h2>
+                </div>
+            </div> -->
+        </div>
+    </section>
         
 <!-- ============================================================ Copyright ============================================================== -->
             <div class="copyright">
+                <hr>
                 <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
             </div>
-
-<!-- ============================================================ Script ============================================================== -->
+            
             <script src="script.js"></script>
-        
     </body>
 </html>
