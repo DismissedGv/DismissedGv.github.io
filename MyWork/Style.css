@@ -7,11 +7,11 @@
 
     --dark-blue-color: #1B1F24;
     --lighter-blue-color: #2B313C;
-    --blue-color: #075FE4;
+    --blue-color: #093d8b;
     --grey-color: #858A92;
 }
 body{
-    background:  var(--dark-blue-color);
+    background:  #111;
     color: var(--grey-color);
 }
 #header{
@@ -32,7 +32,7 @@ body{
 nav{
     z-index: 10;
     position: fixed;
-    background-color: #1b1f24f5;
+    background-color: #111111f3;
     width: 100%;
     height: 70px;
     
@@ -78,7 +78,7 @@ nav a.active{
     padding: 15px 20px;
     font-size: 36px;
     font-weight: 600;
-    background-color: #2b313cc2; /* unique color */
+    background-color: #111111f3;
     color: var(--blue-color);
     position:absolute;
     margin-top: -79px;
@@ -114,8 +114,7 @@ nav a.active{
 .game-context1{
     width: 575px;
     height: auto;
-    background-color: var(--lighter-blue-color);
-
+    border: 1px solid #27272a;
     border-radius: 10px;
     padding-left: 5%;
     align-content: center;
@@ -129,9 +128,7 @@ nav a.active{
 .game-context2{
     width: 575px;
     height: auto;
-    background-color: var(--lighter-blue-color);
-
-
+    border: 1px solid #27272a;
     border-radius: 10px;
     padding-left: 5%;
     align-content: center;
@@ -168,7 +165,6 @@ nav a.active{
     width: 100%;
     text-align: center;
     padding: 20px 0;
-    background: var(--lighter-blue-color);
     font-weight: 600;
     margin-top: 20px;
     font-size: 10px;

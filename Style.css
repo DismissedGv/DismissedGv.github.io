@@ -6,10 +6,6 @@
     --text-color: #ebebeb;
     --hover-color: #093d8b;
     --text-muted-color: #858A92;
-
-    --lighter-blue-color: #2B313C;
-    --blue-color: #075FE4;
-    --grey-color: #858A92;
 }
 body{
     margin: 0;               /* remove default browser margin */
