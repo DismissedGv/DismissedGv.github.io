@@ -62,7 +62,7 @@ nav{
     font-size: 25px;
 }
 nav a{
-    color: var(--grey-color);
+    color: var(--text-muted-color);
     text-decoration: none;
     margin-left: 30px;
     transition: color 0.2s ease;
@@ -76,7 +76,7 @@ nav a.active {
     gap: 20px;
 }
 .nav-links a {
-    color: var(--grey-color);
+    color: var(--text-muted-color);
     text-decoration: none;
     transition: color 0.2s ease;
 }
@@ -84,7 +84,7 @@ nav a.active {
     position: absolute;
     right: 40px;
     padding: 8px 16px;
-    border: 1px solid var(--grey-color);
+    border: 1px solid var(--text-muted-color);
     border-radius: 6px;
     transition: all 0.3s ease;
 }

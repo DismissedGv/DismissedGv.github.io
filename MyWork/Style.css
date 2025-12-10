@@ -78,8 +78,7 @@ nav a.active{
     padding: 15px 20px;
     font-size: 36px;
     font-weight: 600;
-    background-color: #111111f3;
-    color: var(--blue-color);
+    color: white;
     position:absolute;
     margin-top: -79px;
     border-bottom-right-radius: var(--game-video-radius);
