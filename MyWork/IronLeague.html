@@ -1,117 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinan K Portfolio</title>
-    <link rel="icon" href="../images/tab-icon.png">
-    <link rel="stylesheet" href="Style.css">
-    <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iron League | Sinan Koc</title>
+  <meta name="description" content="Iron League project page by Sinan Koc, covering Unity audio systems, score UI, and gameplay leadership work.">
+  <link rel="icon" href="../images/tab-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      let storedTheme = null;
+      try {
+        storedTheme = localStorage.getItem("theme");
+      } catch {
+        storedTheme = null;
+      }
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = storedTheme || systemTheme;
+    })();
+  </script>
+  <link rel="stylesheet" href="ProjectPage.css">
 </head>
 <body>
-
-<!----------------Navigation bar---------------->
-<nav>
-    <a class="back-button" href="../index.html#IronLeague"><i class="fa-solid fa-angle-left"></i> Go Back</a>
-</nav>
-
-<!----------------Game---------------->
-<Section id="game">
-    <div class="container">
-        <video class="game-video" autoplay loop muted><source src="../Videos/IronLeagueVideo.mp4" type="video/mp4"></video>
-        <div class="game-title">Iron League</div>
-
-        <div class="game-description-list">
-            <div class="game-context1">
-                <br>
-                <h1>About</h1>
-                <p>
-                    Iron League is a mobile game inspired by a real-life intense sport. It was FutureGames second game project, 
-                    developed in collaboration with Turborilla. 
-                    <br><br>
-                    The game was built with C# and Unity together with a team of 17 people assigned by FutureGames.
-                </p>
-            </div>
-            <div class="game-context2">
-                <h1>Info</h1>
-                <p><i class="fa-solid fa-user"></i> Role: Gameplay Programmer & Lead</p> 
-                <p><i class="fa-solid fa-users"></i> Team Size: 17</p>
-                <p><i class="fa-solid fa-clock"></i> Time: 4 Weeks</p>
-                <p><i class="fa-solid fa-screwdriver-wrench"></i> Engine: Unity</p>
-            </div>
-        </div>
-
-        <div class="game-introduction">
-            <h1 class="game-sub-title">Introduction</h1> <!-- Introduction -->
-            <p>
-                In this project I took the responsibility of programming the game's <mark>audio system</mark> and <mark>user interface</mark>.
-                Our team utilized <mark>Github</mark> desktop as source control, <mark>Miro</mark> for prototyping, <mark>Jira</mark> for project management. 
-                This was the first time I ever did a mobile game, but it wasn't so much different when it came down to logic.
-            </p>
-
-            <h1 class="game-sub-title">Audio System</h1> <!-- Audio System -->
-            <div class="game-grid-container">
-                <p>
-                    The game's audio system consists of three key scripts:
-                    <br><br>
-                    <mark>AudioManager:</mark> Responsible for managing volume levels and utilizing Unity's save and load system to persist volume settings.
-                    <br><br>
-                    <mark>Sound:</mark> A designer-friendly interface for working with the audio system, providing flexibility and ease of use.
-                    <br><br>
-                    <mark>UISoundController:</mark> Handles user input for volume adjustments in the game's settings menu, ensuring a seamless user experience.
-                </p>
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <img id="slide-1" src="../images/CodeSnippet/IronLeague/AudioManager1.png">
-                        <img id="slide-2" src="../images/CodeSnippet/IronLeague/AudioManager2.png">
-                        <img id="slide-3" src="../images/CodeSnippet/IronLeague/AudioManager3.png">
-                    </div>
-                    <div class="slider-nav">
-                        <a href="#slide-1"></a>
-                        <a href="#slide-2"></a>
-                        <a href="#slide-3"></a>
-                    </div>
-                </div>
-            </div>
-            <h1 class="game-sub-title">User Interface</h1> <!-- User Interface -->
-            <div class="game-grid-container">
-                <p>
-                    I have implemented two <mark>UI</mark> scripts in the game: <mark>ScoreManager</mark> and <mark>ScorePopup</mark>. 
-                    <br><br>
-                    The <mark>ScoreManager</mark> script 
-                    contains two key functions: one for initializing player scores and another for updating scores in real-time. 
-                    <br><br>
-                    Meanwhile, the <mark>ScorePopup</mark> script is responsible for dynamically animating the score display using a lerp function 
-                    to smoothly transition to the total score.
-                </p>
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <img id="slide-6" src="../images/CodeSnippet/IronLeague/ScoreManager.png">
-                        <img id="slide-7" src="../images/CodeSnippet/IronLeague/ScorePopup.png">
-                    </div>
-                    <div class="slider-nav">
-                        <a href="#slide-6"></a>
-                        <a href="#slide-7"></a>
-                    </div>
-                </div>
-            </div>
-            <h1 class="game-sub-title">What I learned</h1> <!-- What I Learned -->
-            <p>
-                With such a great team, I had the opportunity to refine my skills in general knowledge of <mark>C#</mark>, <mark>Unity</mark> for mobile development 
-                and project management tools like <mark>github</mark>, <mark>miro</mark>, and <mark>jira</mark>.
-                <br><br>
-                Download and Play Iron League on <a href="https://futuregames.itch.io/ironleague" target="_blank">itch.io <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </p>
-        </div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">Sinan Koc</a>
+    <div class="header__right">
+      <nav class="nav" aria-label="Project navigation">
+        <a href="../index.html#work">Back</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span aria-hidden="true">&#9790;</span>
+      </button>
     </div>
-</Section>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="label">Futuregames / Unity / Gameplay Lead</p>
+        <h1>Iron League</h1>
+        <p>
+          A mobile Unity project inspired by an intense real-world sport, developed with Futuregames in collaboration with Turborilla.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://futuregames.itch.io/ironleague" target="_blank" rel="noreferrer">Play on itch.io</a>
+          <a class="button" href="#work">My work</a>
+        </div>
+      </div>
 
-<div class="copyright">
-    <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
-</div>
+      <div class="hero-media">
+        <video autoplay loop muted playsinline>
+          <source src="../Videos/IronLeagueVideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="facts" aria-label="Project facts">
+      <div class="fact"><span>Role</span><strong>Gameplay Lead</strong></div>
+      <div class="fact"><span>Team</span><strong>17 people</strong></div>
+      <div class="fact"><span>Time</span><strong>4 weeks</strong></div>
+      <div class="fact"><span>Engine</span><strong>Unity</strong></div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="case-study">
+        <article class="case-block">
+          <p class="label">My work</p>
+          <h3>Introduction</h3>
+          <p>
+            Iron League was a mobile Unity project made with <mark>Futuregames</mark> in collaboration with <mark>Turborilla</mark>. I worked as the gameplay lead on a 17-person team.
+          </p>
+          <p>
+            My main responsibility was making player feedback clear through audio, score updates, and UI responses during gameplay.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>Audio</h3>
+          <p>
+            I built the audio manager and volume handling so player settings could persist between sessions and stay easy to control from the menus.
+          </p>
+          <p>
+            I also made the setup easier for designers to use, so sounds could be assigned and adjusted without digging through gameplay code.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>Score feedback</h3>
+          <p>
+            I worked on score initialization, live score updates, and score popup feedback. The goal was to make scoring feel immediate and readable on mobile.
+          </p>
+          <p>
+            The UI needed to stay simple, but still give the player enough feedback to understand what changed and when.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>What I learned</h3>
+          <p>
+            This project taught me a lot about working in a larger team, keeping systems designer-friendly, and communicating clearly when several disciplines depend on the same features.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright 2026 Sinan Koc</p>
+  </footer>
+  <script src="project-theme.js"></script>
 </body>
 </html>

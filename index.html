@@ -1,233 +1,466 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sinan K Portfolio</title>
-        <link rel="icon" href="images/tab-icon.png">
-        <link rel="stylesheet" href="Style.css">
-        <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
-    </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sinan Koc | Gameplay Programmer</title>
+  <meta name="description" content="Sinan Koc is a gameplay programmer focused on Unity, C#, gameplay systems, AI, UI, and team-based game production." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    const storedTheme = localStorage.getItem("theme");
+    const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+    document.documentElement.dataset.theme = storedTheme || systemTheme;
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="#top">Sinan Koc</a>
+    <div class="header__right">
+      <nav class="nav" aria-label="Main navigation">
+        <a href="#work">Work</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span aria-hidden="true">☾</span>
+      </button>
+    </div>
+  </header>
 
-    <body>
-<!-- ============================================================ Navigation ============================================================== -->
-        <nav>
-            <div class="nav-left">
-                <a href="#about" class="name">Sinan Koç</a>
-            </div>
-
-            <div class="nav-links">
-                <a href="#about" class="active">About</a>
-                <a href="#experience">Experience</a>
-                <a href="#projects">Projects</a>
-            </div>
-
-            <a class="nav-resume" target="_blank" href="https://docs.google.com/document/d/1Nb6-c-W0KDgFF9a3No-v7_ArTD4zfoR2gH79aMNtgBw/edit?usp=sharing">Resume</a>
-        </nav>
-
-<!-- ============================================================ About ============================================================== -->
-        <section id="about">
-            <div class="card">
-                <div class="flex-col-1">
-
-                    <h1> Sinan Koç </h1>
-
-                    <div class="about-social-icons">
-                        <a href="mailto:Kocsinan958@gmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
-                        <a href="https://www.linkedin.com/in/sinan-koc-47065428b/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                        <a href="https://discord.com/users/userid=372691024444784641" target="_blank"><i class="fa-brands fa-discord"></i></a>
-                        <a href="https://www.instagram.com/sinan_ckc/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="https://twitter.com/DismissedGv" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
-                        <a href="https://github.com/DismissedGv" target="_blank"><i class="fa-brands fa-github"></i></a>
-                    </div>
-                </div>
-
-                <div class="location"><i class="fa-solid fa-location-dot"></i> Umeå, Sweden </div>
-
-                <p>
-                    I'm 21-year-old Game Developer. I have been programming for more than 5 years.
-                    With a focus on clean code architecture, and effective team communication.
-                </p>
-            </div>
-        </section>
-
-<!-- ============================================================ Skills ============================================================== -->
-        <section id="skills">
-            <h1>Tech Stack</h1>
-            <div class="scroller" data-animated="true">
-                <div class="skills-list">
-                    <span class="skill"><i class="fa-solid fa-c"></i>C#</span>
-                    <span class="skill"><i class="fa-brands fa-java"></i>Java</span>
-                    <span class="skill"><i class="fa-brands fa-js"></i>JavaScript</span>
-                    <span class="skill"><i class="fa-solid fa-square"></i>TypeScript</span>
-                    <span class="skill"><i class="fa-brands fa-python"></i>Python</span>
-                    <span class="skill"><i class="fa-brands fa-html5"></i>HTML</span>
-                    <span class="skill"><i class="fa-brands fa-css3"></i>CSS</span>
-                </div>
-            </div>
-
-            <div class="scroller scroller2" data-animated="true">
-                <div class="skills-list">
-                    <span class="skill"><i class="fa-solid fa-gear"></i>Unreal</span>
-                    <span class="skill"><i class="fa-brands fa-unity"></i>Unity</span>
-                    <span class="skill"><i class="fa-brands fa-github"></i>GitHub</span>
-                    <span class="skill"><i class="fa-solid fa-laptop-code"></i>Perforce</span>
-                    <span class="skill"><i class="fa-solid fa-code-fork"></i>Fork</span>
-                    <span class="skill"><i class="fa-brands fa-git"></i>Git</span>
-                </div>
-            </div>
-        </section>
-
-<!-- ============================================================ Experience ============================================================== -->
-    <section id="experience">
-        <h1 class="title">Experience</h1>
-        <div class="timeline">
-            <div class="entry">
-            <div class="dot"></div>
-            <div class="content">
-                <h2><a href="https://www.greytowerstudios.com/" target="_blank" class="experience-link">Grey Tower Studios</a></h2>
-                <p class="position">Gameplay Developer</p>
-                <p class="meta">19 May 2025 - 26 Dec 2025</p>
-                <p class="desc">
-                    6-month game development internship focused on gameplay
-                </p>
-            </div>
-            </div>
-
-            <div class="entry">
-            <div class="dot"></div>
-            <div class="content">
-                <h2>Future Games</h2>
-                <p class="position">Gameplay Developer</p>
-                <p class="meta">2023 - 2025</p>
-                <p class="desc">
-                    Higher Vocational Education Diploma, Game Programming
-                </p>
-            </div>
-            </div>
-
-            <div class="entry">
-            <div class="dot"></div>
-            <div class="content">
-                <h2>Acino</h2>
-                <p class="position">Gameplay Developer</p>
-                <p class="meta">Jun 2023</p>
-                <p class="desc">
-                    This was my real first hand experience in the industry as a 
-                    summer job assisting with the development of an indie game
-                </p>
-            </div>
+  <main id="top">
+    <section class="hero section">
+      <div class="hero__content">
+        <p class="label">About</p>
+        <h1>Sinan Koc</h1>
+        <p class="hero__text">
+          Programmer focused on AI, gameplay systems, clean architecture, and healthy team culture.
+        </p>
+        <div class="actions">
+          <a class="button button--dark" href="#work">View work</a>
+          <a class="button" href="mailto:kocsinan958@gmail.com">Email</a>
+          <a class="button" href="https://github.com/DismissedGv" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="button" href="https://docs.google.com/document/d/1Nb6-c-W0KDgFF9a3No-v7_ArTD4zfoR2gH79aMNtgBw/edit?usp=sharing" target="_blank" rel="noreferrer">Resume</a>
         </div>
+      </div>
 
-        <div class="entry">
-            <div class="dot"></div>
-                <div class="content">
-                    <h2>Maja Beskow</h2>
-                    <p class="position">Programming Essentials</p>
-                    <p class="meta">2020 - 2023</p>
-                    <p class="desc">
-                        Computer Science Degree
-                    </p>
-                </div>
-            </div>
+      <aside class="hero__panel" aria-label="Profile highlights">
+        <div>
+          <span>Role</span>
+          <strong>Game Programmer</strong>
         </div>
+        <div>
+          <span>Focus</span>
+          <strong>AI & Gameplay</strong>
+        </div>
+        <div>
+          <span>Approach</span>
+          <strong>Learn & Improve</strong>
+        </div>
+        <div>
+          <span>Based in</span>
+          <strong>Umeå, Sweden</strong>
+        </div>
+      </aside>
     </section>
 
-<!-- ============================================================ Projects ============================================================== -->
-    <section id="projects">
-        <h1>My Work</h1>
-        <div class="work-list">
-
-            <div class="work" id="WrathfulHedgehog" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
-                <video autoplay loop muted>
-                    <source src="Videos/WrathfulHedgehogVideo.mp4" type="video/mp4">
-                </video>
-                <div class="overlay">
-                    <h3>Wrathful Hedgehog</h3>
-                    <p>AI & Gameplay Programmer <br><br>
-                        It's a first-person horde shooter game where you play as a wrathful hedgehog trying to defend its home from dangerous foxes.
-                    </p>
-                    <div class="learn-more">Learn more<i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-            </div>
-
-            <div class="work" id="IronLeague" onclick="window.location.href='MyWork/IronLeague.html'">
-                <video autoplay loop muted>
-                    <source src="Videos/IronLeagueVideo.mp4" type="video/mp4">
-                </video>
-                <div class="overlay">
-                    <h3>Iron League</h3>
-                    <p>Gameplay Programmer & Lead <br><br>
-                        It's a horror and puzzle game where you play as Fredrik, a process operator, navigating the dangerous corridors of Ulrich's Medical Science.
-                    </p>
-                    <div class="learn-more">Learn more<i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-            </div>
-
-            <div class="work" id="BiochemNightshift" onclick="window.location.href='MyWork/BiochemNightshift.html'">
-                <video autoplay loop muted>
-                    <source src="Videos/BiochemNightshiftVideo.mp4" type="video/mp4">
-                </video>
-                <div class="overlay">
-                    <h3>Biochem Nightshift</h3>
-                    <p>Product Owner & Gameplay Programmer <br><br>
-                        It's a horror and puzzle game where you play as Fredrik, a process operator, navigating the dangerous corridors of Ulrich's Medical Science.
-                    </p>
-                    <div class="learn-more">View Project<i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-            </div>
-
-            <div class="work" id="DeleteTheDevs" onclick="window.location.href='MyWork/DeleteTheDevs.html'">
-                <video autoplay loop muted>
-                    <source src="Videos/DeleteTheDevsVideo.mp4" type="video/mp4">
-                </video>
-                <div class="overlay">
-                    <h3>Marked For Deletion</h3>
-                    <p>Gameplay & Animation Programmer <br><br>
-                        It's a game about deleting the developers of the game. As you delete the crew, you also delete the game which is the end goal.
-                    </p>
-                    <div class="learn-more">View Project<i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-            </div>
-
-            <!-- <div class="work" id="Howl" onclick="window.location.href='MyWork/Howl.html'">
-                <video autoplay loop muted>
-                    <source src="Videos/VideoExample.mp4" type="video/mp4">
-                </video>
-                <div class="overlay">
-                    <h3>Boring Arcade</h3>
-                    <p>Developer <br><br>
-                        My work done on Minecraft. I have created a few things for Minecraft Java Edition (Mods, Datapacks, Resource packs, etc.)
-                    </p>
-                    <div class="learn-more">View Project<i class="fa-solid fa-arrow-right"></i></div>
-                </div>
-            </div> -->
-
-
-            <!-- <div class="work" id="BoringArcade" onclick="window.location.href='MyWork/BoringArcade.html'">
-                <video autoplay loop muted><source src="Videos/VideoExample.mp4" type="video/mp4"></video>
-                <div class="work-info">
-                    <i class="fa-solid fa-users"></i> 1 
-                    <i class="fa-solid fa-clock"></i> None
-                    <i class="fa-solid fa-screwdriver-wrench"></i> Java
-                </div>
-                <div class="text-box">
-                    <h3>Boring Arcade</i></h3>
-                    <p>Developer <br><br>My work done on minecraft. I have created a few stuff for Minecraft java Edition (Mods, Datapacks, Resource packs, etc.)
-                    </p>
-                    <h2>View Project<i class="fa-solid fa-arrow-right"></i></h2>
-                </div>
-            </div> -->
+    <section id="work" class="section">
+      <div class="section__head">
+        <div>
+          <p class="label">Selected work</p>
+          <h2>Projects</h2>
         </div>
-    </section>
-        
-<!-- ============================================================ Copyright ============================================================== -->
-            <div class="copyright">
-                <hr>
-                <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
+      </div>
+
+      <div class="projects">
+        <article class="project project--featured" onclick="window.location.href='MyWork/ProjectA.html'">
+          <div class="project__media project__media--plain">
+            <img src="images/Banner(white hair).png" alt="Project A character illustration surrounded by enemies">
+          </div>
+          <div class="project__content">
+            <p class="label">BAG Studios / Co-Founder / Gameplay Systems</p>
+            <h3>Project A</h3>
+            <p>
+              Hack-and-slash arena game focused on responsive combat, enemy pressure, and replayable encounters.
+            </p>
+            <dl class="project-facts">
+              <div><dt>Role</dt><dd>Co-Founder</dd></div>
+              <div><dt>Focus</dt><dd>Combat systems</dd></div>
+              <div><dt>Status</dt><dd>In development</dd></div>
+              <div><dt>Engine</dt><dd>Unity</dd></div>
+            </dl>
+            <div class="project-actions">
+              <a href="MyWork/ProjectA.html" onclick="event.stopPropagation()">Learn more</a>
             </div>
-            
-            <script src="script.js"></script>
-    </body>
+          </div>
+        </article>
+
+        <article class="project" onclick="window.location.href='MyWork/WrathfulHedgehog.html'">
+          <div class="project__media compact">
+            <video autoplay loop muted playsinline>
+              <source src="Videos/WrathfulHedgehogVideo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project__content">
+            <p class="label">AI & Gameplay / Unity</p>
+            <h3>Wrathful Hedgehog</h3>
+            <p>First-person horde shooter with enemy AI, wave spawning, health, UI, and cave-shrinking pressure.</p>
+            <dl class="project-facts">
+              <div><dt>Team</dt><dd>14</dd></div>
+              <div><dt>Time</dt><dd>2.5 weeks</dd></div>
+              <div><dt>Engine</dt><dd>Unity</dd></div>
+              <div><dt>Tools</dt><dd>Perforce</dd></div>
+            </dl>
+            <div class="project-actions">
+              <a href="MyWork/WrathfulHedgehog.html" onclick="event.stopPropagation()">Learn more</a>
+              <a href="https://futuregames.itch.io/wrathful-hedgehog" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">Play</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" onclick="window.location.href='MyWork/IronLeague.html'">
+          <div class="project__media compact">
+            <video autoplay loop muted playsinline>
+              <source src="Videos/IronLeagueVideo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project__content">
+            <p class="label">Gameplay Lead / Unity</p>
+            <h3>Iron League</h3>
+            <p>Mobile Unity project where I built audio and score UI systems for a 17-person team.</p>
+            <dl class="project-facts">
+              <div><dt>Team</dt><dd>17</dd></div>
+              <div><dt>Time</dt><dd>4 weeks</dd></div>
+              <div><dt>Engine</dt><dd>Unity</dd></div>
+              <div><dt>Focus</dt><dd>Audio / UI</dd></div>
+            </dl>
+            <div class="project-actions">
+              <a href="MyWork/IronLeague.html" onclick="event.stopPropagation()">Learn more</a>
+              <a href="https://futuregames.itch.io/ironleague" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">Play</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" onclick="window.location.href='MyWork/BiochemNightshift.html'">
+          <div class="project__media compact">
+            <video autoplay loop muted playsinline>
+              <source src="Videos/BiochemNightshiftVideo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project__content">
+            <p class="label">Product Owner / Unreal</p>
+            <h3>Biochem Nightshift</h3>
+            <p>Horror puzzle game where I handled product ownership, source-control support, and gameplay implementation.</p>
+            <dl class="project-facts">
+              <div><dt>Team</dt><dd>16</dd></div>
+              <div><dt>Time</dt><dd>7 weeks</dd></div>
+              <div><dt>Engine</dt><dd>Unreal</dd></div>
+              <div><dt>Focus</dt><dd>Leadership</dd></div>
+            </dl>
+            <div class="project-actions">
+              <a href="MyWork/BiochemNightshift.html" onclick="event.stopPropagation()">Learn more</a>
+              <a href="https://futuregames.itch.io/biochem-nightshift" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">Play</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project" onclick="window.location.href='MyWork/DeleteTheDevs.html'">
+          <div class="project__media compact">
+            <video autoplay loop muted playsinline>
+              <source src="Videos/DeleteTheDevsVideo.mp4" type="video/mp4">
+            </video>
+          </div>
+          <div class="project__content">
+            <p class="label">Gameplay & Animation / Unreal</p>
+            <h3>Marked For Deletion</h3>
+            <p>Meta game where deleting the development team makes parts of the game disappear too.</p>
+            <dl class="project-facts">
+              <div><dt>Team</dt><dd>11</dd></div>
+              <div><dt>Time</dt><dd>4 weeks</dd></div>
+              <div><dt>Engine</dt><dd>Unreal</dd></div>
+              <div><dt>Focus</dt><dd>Gameplay</dd></div>
+            </dl>
+            <div class="project-actions">
+              <a href="MyWork/DeleteTheDevs.html" onclick="event.stopPropagation()">Learn more</a>
+              <a href="https://futuregames.itch.io/markedfordeletion" target="_blank" rel="noreferrer" onclick="event.stopPropagation()">Play</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="samples" class="section" hidden>
+      <div class="section__head">
+        <div>
+          <p class="label">Work samples</p>
+          <h2>Systems & code</h2>
+        </div>
+      </div>
+
+      <div class="sample-grid">
+        <article class="sample">
+          <img src="images/CodeSnippet/WrathfulHedgehog/EnemyScript.png" alt="Enemy script code from Wrathful Hedgehog">
+          <div>
+            <p class="label">Wrathful Hedgehog</p>
+            <h3>Enemy behavior</h3>
+            <p>Enemy health, target handling, attack behavior, and combat state logic for the horde shooter loop.</p>
+          </div>
+        </article>
+
+        <article class="sample">
+          <img src="images/CodeSnippet/WrathfulHedgehog/EnemySpawnerScript1.png" alt="Enemy spawner code from Wrathful Hedgehog">
+          <div>
+            <p class="label">Wrathful Hedgehog</p>
+            <h3>Spawner flow</h3>
+            <p>Wave spawning logic connected to the game manager so enemy pressure can scale between rounds.</p>
+          </div>
+        </article>
+
+        <article class="sample">
+          <img src="images/CodeSnippet/WrathfulHedgehog/EnemyNavigationScript.png" alt="Enemy navigation code from Wrathful Hedgehog">
+          <div>
+            <p class="label">Wrathful Hedgehog</p>
+            <h3>AI navigation</h3>
+            <p>NavMeshAgent movement and pathing support for enemies navigating the cave environment.</p>
+          </div>
+        </article>
+
+        <article class="sample">
+          <img src="images/CodeSnippet/IronLeague/AudioManager1.png" alt="Audio manager code from Iron League">
+          <div>
+            <p class="label">Iron League</p>
+            <h3>Audio manager</h3>
+            <p>Volume management and persistent settings for the mobile game's audio system.</p>
+          </div>
+        </article>
+
+        <article class="sample">
+          <img src="images/CodeSnippet/IronLeague/ScoreManager.png" alt="Score manager code from Iron League">
+          <div>
+            <p class="label">Iron League</p>
+            <h3>Score manager</h3>
+            <p>Score initialization and real-time score updates for the player-facing UI.</p>
+          </div>
+        </article>
+
+        <article class="sample">
+          <img src="images/CodeSnippet/IronLeague/ScorePopup.png" alt="Score popup code from Iron League">
+          <div>
+            <p class="label">Iron League</p>
+            <h3>Animated score UI</h3>
+            <p>Score display feedback using interpolation to make score changes feel smoother.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="section two-column">
+      <div class="section__head sticky">
+        <p class="label">Background</p>
+        <h2>Experience</h2>
+      </div>
+
+      <div class="timeline">
+        <article>
+          <p>2026 - Present</p>
+          <h3><a href="https://boringarcadestudios.github.io/BoringArcadeStudios/" target="_blank" rel="noreferrer">BAG Studios</a></h3>
+          <span>Co-Founder & Gameplay Systems Programmer</span>
+          <p>Working on Project A, a hack-and-slash arena game focused on satisfying combat, enemy pressure, and replayable encounters.</p>
+        </article>
+        <article>
+          <p>May 2025 - Dec 2025</p>
+          <h3><a href="https://www.greytowerstudios.com/" target="_blank" rel="noreferrer">Grey Tower Studios</a></h3>
+          <span>Gameplay Developer Intern</span>
+          <p>Six-month internship focused on gameplay systems, utility AI, entity behavior, interactions, animation support, and multiplayer-related features.</p>
+        </article>
+        <article>
+          <p>2023 - 2025</p>
+          <h3>Futuregames</h3>
+          <span>Game Programming</span>
+          <p>Higher Vocational Education diploma in game programming, with several team projects built using Unity, Unreal, C#, production planning, and interdisciplinary collaboration.</p>
+        </article>
+        <article>
+          <p>Jun 2023</p>
+          <h3>Acino</h3>
+          <span>Game Developer</span>
+          <p>Summer job assisting with indie game development and gaining first-hand experience with real game production.</p>
+        </article>
+        <article>
+          <p>2020 - 2023</p>
+          <h3>Maja Beskow</h3>
+          <span>Programming Essentials</span>
+          <p>Computer science education that built the programming foundation before specializing in game development.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <div class="section__head">
+        <p class="label">Toolkit</p>
+        <h2>Skills</h2>
+      </div>
+
+      <div class="skills">
+        <div class="skill-column">
+          <p class="label">What I build</p>
+          <h3>Gameplay and AI systems</h3>
+          <p>Gameplay features that connect player actions, enemy behavior, round flow, and feedback into systems a team can tune quickly.</p>
+          <div class="skill-tags">
+            <span>Combat</span>
+            <span>Player mechanics</span>
+            <span>Enemy AI</span>
+            <span>Spawning</span>
+            <span>Game feel</span>
+            <span>UI feedback</span>
+          </div>
+        </div>
+
+        <div class="skill-column">
+          <p class="label">What I use</p>
+          <h3>Engines, code, and workflow</h3>
+          <p>Mainly Unity and C#, with experience using Unreal and production tools across team projects.</p>
+          <div class="skill-tags">
+            <span>Unity</span>
+            <span>C#</span>
+            <span>Unreal</span>
+            <span>Perforce</span>
+            <span>Git</span>
+            <span>Jira</span>
+            <span>Miro</span>
+            <span>Notion</span>
+            <span>FMOD</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <p class="label">Socials</p>
+      <h2>Find me online</h2>
+      <div class="social-grid">
+        <a class="social-link" href="mailto:kocsinan958@gmail.com">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M4 6h16v12H4z"/><path d="m4 7 8 6 8-6"/></svg>
+          <span>
+            <strong>Email</strong>
+            <small>kocsinan958@gmail.com</small>
+          </span>
+        </a>
+        <a class="social-link" href="https://www.linkedin.com/in/sinan-koc-47065428b/" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M6.5 10v8"/><path d="M6.5 6v.1"/><path d="M11 18v-8"/><path d="M11 13.5c0-2.2 1.3-3.5 3.1-3.5s3.4 1.1 3.4 4v4"/></svg>
+          <span>
+            <strong>LinkedIn</strong>
+            <small>sinan-koc</small>
+          </span>
+        </a>
+        <a class="social-link" href="https://github.com/DismissedGv" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M9 19c-4 1.5-4-2-5-2.5"/><path d="M15 22v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6A4.6 4.6 0 0 0 18.7 7c.1-.4.5-1.8-.2-3.5 0 0-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6 0C6.6 3.2 5.5 3.5 5.5 3.5 4.8 5.2 5.2 6.6 5.3 7A4.6 4.6 0 0 0 4 10.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V22"/></svg>
+          <span>
+            <strong>GitHub</strong>
+            <small>DismissedGv</small>
+          </span>
+        </a>
+        <a class="social-link" href="https://twitter.com/DismissedGv" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><path d="m5 5 14 14"/><path d="m19 5-14 14"/></svg>
+          <span>
+            <strong>X</strong>
+            <small>@DismissedGv</small>
+          </span>
+        </a>
+        <a class="social-link" href="https://www.instagram.com/sinan_ckc/" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><rect x="5" y="5" width="14" height="14" rx="4"/><circle cx="12" cy="12" r="3"/><path d="M16.5 7.5v.1"/></svg>
+          <span>
+            <strong>Instagram</strong>
+            <small>@sinan_ckc</small>
+          </span>
+        </a>
+        <a class="social-link" href="https://www.reddit.com/user/CrApyRedditUser/" target="_blank" rel="noreferrer">
+          <svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7"/><path d="M12 6l1.2-3 3.3.8"/><path d="M8.5 12.5h.1"/><path d="M15.5 12.5h.1"/><path d="M9.5 16c1.4 1 3.6 1 5 0"/></svg>
+          <span>
+            <strong>Reddit</strong>
+            <small>u/CrApyRedditUser</small>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright 2026 Sinan Koc</p>
+  </footer>
+  <script>
+    const themeToggle = document.getElementById("theme-toggle");
+    const themeIcon = themeToggle.querySelector("span");
+    const systemThemeQuery = window.matchMedia("(prefers-color-scheme: dark)");
+
+    function setTheme(theme, shouldSave = false) {
+      document.documentElement.dataset.theme = theme;
+      themeIcon.textContent = theme === "dark" ? "☀" : "☾";
+      themeToggle.setAttribute("aria-label", theme === "dark" ? "Switch to light mode" : "Switch to dark mode");
+      themeToggle.setAttribute("aria-pressed", theme === "dark");
+
+      if (shouldSave) {
+        localStorage.setItem("theme", theme);
+      }
+    }
+
+    setTheme(document.documentElement.dataset.theme);
+
+    themeToggle.addEventListener("click", () => {
+      const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
+      setTheme(nextTheme, true);
+    });
+
+    systemThemeQuery.addEventListener("change", event => {
+      if (!localStorage.getItem("theme")) {
+        setTheme(event.matches ? "dark" : "light");
+      }
+    });
+
+    const navLinks = [...document.querySelectorAll(".nav a[href^='#']")];
+    const navSections = navLinks
+      .map(link => document.querySelector(link.getAttribute("href")))
+      .filter(Boolean);
+
+    function setActiveNav() {
+      const scrollPosition = window.scrollY + 140;
+      const isAtBottom = window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      let activeSection = null;
+
+      navSections.forEach(section => {
+        if (scrollPosition >= section.offsetTop) {
+          activeSection = section;
+        }
+      });
+
+      if (isAtBottom) {
+        activeSection = document.querySelector("#contact");
+      }
+
+      navLinks.forEach(link => {
+        const isActive = activeSection && link.getAttribute("href") === `#${activeSection.id}`;
+        link.classList.toggle("active", isActive);
+        link.toggleAttribute("aria-current", isActive);
+      });
+    }
+
+    navLinks.forEach(link => {
+      link.addEventListener("click", () => {
+        navLinks.forEach(item => {
+          item.classList.remove("active");
+          item.removeAttribute("aria-current");
+        });
+        link.classList.add("active");
+        link.setAttribute("aria-current", "true");
+      });
+    });
+
+    setActiveNav();
+    window.addEventListener("scroll", setActiveNav, { passive: true });
+    window.addEventListener("resize", setActiveNav);
+  </script>
+</body>
 </html>
+

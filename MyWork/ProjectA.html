@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project A | Sinan Koc</title>
+  <meta name="description" content="Project A is a hack-and-slash arena game by BAG Studios, with Sinan Koc working as co-founder and gameplay systems programmer.">
+  <link rel="icon" href="../images/tab-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      let storedTheme = null;
+      try {
+        storedTheme = localStorage.getItem("theme");
+      } catch {
+        storedTheme = null;
+      }
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = storedTheme || systemTheme;
+    })();
+  </script>
+  <link rel="stylesheet" href="ProjectPage.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="logo" href="../index.html">Sinan Koc</a>
+    <div class="header__right">
+      <nav class="nav" aria-label="Project navigation">
+        <a href="../index.html#work">Back</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span aria-hidden="true">&#9790;</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="label">BAG Studios / Project A</p>
+        <h1>Project A</h1>
+        <p>
+          A hack-and-slash arena game focused on responsive combat, enemy pressure, and encounters that stay replayable through fast iteration.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="#work">My work</a>
+          <a class="button" href="../index.html#contact">Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-media">
+        <img src="../images/Banner(white hair).png" alt="Project A character illustration surrounded by enemies">
+      </div>
+    </section>
+
+    <section class="facts" aria-label="Project facts">
+      <div class="fact">
+        <span>Role</span>
+        <strong>Co-Founder</strong>
+      </div>
+      <div class="fact">
+        <span>Focus</span>
+        <strong>Gameplay Systems</strong>
+      </div>
+      <div class="fact">
+        <span>Engine</span>
+        <strong>Unity</strong>
+      </div>
+      <div class="fact">
+        <span>Status</span>
+        <strong>In Development</strong>
+      </div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="case-study">
+        <article class="case-block">
+          <p class="label">My work</p>
+          <h3>Introduction</h3>
+          <p>
+            Project A is a hack-and-slash arena game from <mark>BAG Studios</mark>. I am working on it as a <mark>co-founder</mark>, with a focus on gameplay systems and combat feel.
+          </p>
+          <p>
+            The goal is to make each encounter easy to read, satisfying to control, and simple for the team to tune as the game grows.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>Combat systems</h3>
+          <p>
+            I am focusing on player-facing systems: attack timing, impact, feedback, and the small details that make fast combat feel reliable instead of messy.
+          </p>
+          <p>
+            The systems need to support responsive actions while staying clear enough for enemies, arenas, and future mechanics to build on.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>Enemy pressure</h3>
+          <p>
+            A big part of the work is making enemy pressure readable. The player should feel surrounded and challenged, but not confused by random behavior.
+          </p>
+          <p>
+            I am keeping the implementation simple to tune so the team can quickly test enemy behavior, pacing, and encounter changes.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>What I am building toward</h3>
+          <p>
+            Project A is still in development, so the most important thing right now is building a clean foundation: systems that feel good now and do not fight the team later.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright 2026 Sinan Koc</p>
+  </footer>
+  <script src="project-theme.js"></script>
+</body>
+</html>

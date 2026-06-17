@@ -1,97 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinan K Portfolio</title>
-    <link rel="icon" href="../images/tab-icon.png">
-    <link rel="stylesheet" href="Style.css">
-    <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biochem Nightshift | Sinan Koc</title>
+  <meta name="description" content="Biochem Nightshift project page by Sinan Koc, covering product ownership, Unreal gameplay programming, and puzzle implementation.">
+  <link rel="icon" href="../images/tab-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      let storedTheme = null;
+      try {
+        storedTheme = localStorage.getItem("theme");
+      } catch {
+        storedTheme = null;
+      }
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = storedTheme || systemTheme;
+    })();
+  </script>
+  <link rel="stylesheet" href="ProjectPage.css">
 </head>
 <body>
-
-<!----------------Navigation bar---------------->
-<nav>
-    <a class="back-button" href="../index.html#BiochemNightshift"><i class="fa-solid fa-angle-left"></i> Go Back</a>
-</nav>
-
-<!----------------Game---------------->
-<Section id="game">
-    <div class="container">
-        <video class="game-video" autoplay loop muted><source src="../Videos/BiochemNightshiftVideo.mp4" type="video/mp4"></video>
-        <div class="game-title">Biochem Nightshift</div>
-
-        <div class="game-description-list">
-            <div class="game-context1">
-                <br>
-                <h1>About</h1>
-                <p>
-                    Biochem Nightshift is a horror and puzzle game where you play as a process operator, needing to navigate through the dangerous corridors of Ulrich's 
-                    Medical Science and solve puzzles.
-                    <br><br>
-                    The game was built with Unreal together with a team of 16 people assigned by FutureGames.
-                </p>
-            </div>
-            <div class="game-context2">
-                <h1>Info</h1>
-                <p><i class="fa-solid fa-user"></i> Role: Product Owner & Gameplay Programmer</p> 
-                <p><i class="fa-solid fa-users"></i> Team Size: 16</p>
-                <p><i class="fa-solid fa-clock"></i> Time: 7 Weeks</p>
-                <p><i class="fa-solid fa-screwdriver-wrench"></i> Engine: Unreal</p>
-            </div>
-        </div>
-
-        <div class="game-introduction">
-            <h1 class="game-sub-title">Introduction</h1> <!-- Introduction -->
-            <p>
-                In this project, I took on the role of <mark>gameplay</mark>, <mark>source control manager</mark>, and <mark>product owner</mark>, a unique responsibility that only one other programmer 
-                had undertaken at FutureGames before me. I had been eager to try this out, especially after our mentor encouraged us to leaving our "comfort zone".
-                Our team utilized <mark>Perforce</mark> as source control, <mark>Miro</mark> for prototyping, <mark>Jira</mark> for project management.
-            </p>
-            <h1 class="game-sub-title">Product Owner</h1> <!-- Product Owner -->
-            <p>
-                As a first-time <mark>product owner</mark>, I gained invaluable insights into the importance of <mark>leadership</mark> and effective <mark>communication</mark>. 
-                Despite the challenges we faced as a team, including absences and communication breakdowns, I learned to continuously emphasize the need for 
-                clear dialogue. Although not everyone was on the same page, my prior experience on a project proved to be a significant advantage. Here are 
-                the key takeaways from my experience:
-                <br><br>
-                - The crucial role of communication in team success.
-                <br>
-                - Not expecting everyone to be on the same page when no one disagrees.
-                <br>
-                - Getting to know everyone on the team for a better understanding of each other and their roles.
-                <br><br>
-                Our team was facing difficulties during our second greenlight process. However, I was fortunate to have the opportunity to speak with a professional. 
-                This conversation was particularly helpful as I had previously discussed this matter with my mentor, who provided valuable guidance and support. 
-                Our team may have been the messiest, but as the saying goes, "It's through our failures that we learn and grow." and I learned a lot from this experience.
-            </p>
-            <h1 class="game-sub-title">Gameplay</h1> <!-- Gameplay -->
-            <p>
-                When it comes to <mark>gameplay</mark>, I had a lot on my plate as a product owner. Therefore I barely got to implemented anything into the game other than my 
-                marble maze puzzle and a few other small mechanics.
-                <br><br>
-                I got the marble maze made by an artist in our team which I switched it to <mark>"complex collision"</mark> for the walls to collide with the marble and finished it up 
-                with a end goal whenever the ball reaches the end which give the player a key and put <mark>"auto possession"</mark> back to the player blueprint.
-            </p>
-            <h1 class="game-sub-title">What I learned</h1> <!-- What I Learned -->
-            <p>
-                This game project was a valuable learning experience, teaching me the importance of leadership, effective communication, and prioritization. 
-                As the lead on key tool like Perforce, I gained a deeper understanding of the importance of clear communication and the need to set 
-                realistic goals. Having worked on a project previously, I felt more confident this time around, but I still learned the value of knowing my limits 
-                and saying 'no' when necessary.
-                <br><br>
-                Download and Play Biochem Nightshift on <a href="https://futuregames.itch.io/biochem-nightshift" target="_blank">itch.io <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </p>
-        </div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">Sinan Koc</a>
+    <div class="header__right">
+      <nav class="nav" aria-label="Project navigation">
+        <a href="../index.html#work">Back</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span aria-hidden="true">&#9790;</span>
+      </button>
     </div>
-</Section>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="label">Futuregames / Unreal / Product Owner</p>
+        <h1>Biochem Nightshift</h1>
+        <p>
+          A horror puzzle game set inside Ulrich's Medical Science, where the player navigates dangerous corridors as a process operator.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://futuregames.itch.io/biochem-nightshift" target="_blank" rel="noreferrer">Play on itch.io</a>
+          <a class="button" href="#work">My work</a>
+        </div>
+      </div>
 
-<div class="copyright">
-    <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
-</div>
+      <div class="hero-media">
+        <video autoplay loop muted playsinline>
+          <source src="../Videos/BiochemNightshiftVideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="facts" aria-label="Project facts">
+      <div class="fact"><span>Role</span><strong>Product Owner</strong></div>
+      <div class="fact"><span>Team</span><strong>16 people</strong></div>
+      <div class="fact"><span>Time</span><strong>7 weeks</strong></div>
+      <div class="fact"><span>Engine</span><strong>Unreal</strong></div>
+    </section>
+
+    <section id="work" class="section">
+      <div class="case-study">
+        <article class="case-block">
+          <p class="label">My work</p>
+          <h3>Introduction</h3>
+          <p>
+            Biochem Nightshift was a horror puzzle game built in <mark>Unreal</mark> with a 16-person Futuregames team. I worked as the team's <mark>product owner</mark>.
+          </p>
+          <p>
+            I helped guide priorities, communication, and production while also contributing gameplay work where the project needed it.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>Product ownership</h3>
+          <p>
+            My role was to keep the team aligned and turn unclear production problems into decisions the team could act on.
+          </p>
+          <p>
+            I also supported the team with <mark>Perforce</mark>, planning, and source-control structure so development stayed organized.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>Puzzle work</h3>
+          <p>
+            I implemented the marble maze puzzle using collision, goal detection, key reward logic, and a possession handoff back to the player.
+          </p>
+          <p>
+            The puzzle needed to be understandable in the middle of a horror game, so the implementation had to support both interaction and pacing.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>What I learned</h3>
+          <p>
+            This project taught me how important communication and prioritization are when a team is under pressure. I also learned that saying no can protect the game just as much as adding a feature.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright 2026 Sinan Koc</p>
+  </footer>
+  <script src="project-theme.js"></script>
 </body>
 </html>

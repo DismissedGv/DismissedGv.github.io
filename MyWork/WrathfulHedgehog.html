@@ -1,119 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sinan K Portfolio</title>
-    <link rel="icon" href="../images/tab-icon.png">
-    <link rel="stylesheet" href="Style.css">
-    <script src="https://kit.fontawesome.com/80e067a9ea.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrathful Hedgehog | Sinan Koc</title>
+  <meta name="description" content="Wrathful Hedgehog project page by Sinan Koc, covering enemy AI, gameplay systems, enemy spawning, UI, and Unity AI Navigation work.">
+  <link rel="icon" href="../images/tab-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    (() => {
+      let storedTheme = null;
+      try {
+        storedTheme = localStorage.getItem("theme");
+      } catch {
+        storedTheme = null;
+      }
+      const systemTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      document.documentElement.dataset.theme = storedTheme || systemTheme;
+    })();
+  </script>
+  <link rel="stylesheet" href="ProjectPage.css">
 </head>
 <body>
-
-<!----------------Navigation bar---------------->
-<nav>
-    <a class="back-button" href="../index.html#WrathfulHedgehog"><i class="fa-solid fa-angle-left"></i> Go Back</a>
-</nav>
-
-<!----------------Game---------------->
-<Section id="game">
-    <div class="container">
-        <video class="game-video" autoplay loop muted><source src="../Videos/WrathfulHedgehogVideo.mp4" type="video/mp4"></video>
-        <div class="game-title">Wrathful Hedgehog</div>
-
-        <div class="game-description-list">
-            <div class="game-context1">
-                <br>
-                <h1>About</h1>
-                <p>
-                    Wrathful Hedgehog was our first game project at FutureGames.
-                    <br><br>
-                    The game was built with C# and Unity together with a team of 14 people assigned by FutureGames.
-                </p>
-            </div>
-            <div class="game-context2">
-                <h1>Info</h1>
-                <p><i class="fa-solid fa-user"></i> Role: AI & Gameplay Programmer</p> 
-                <p><i class="fa-solid fa-users"></i> Team Size: 14</p>
-                <p><i class="fa-solid fa-clock"></i> Time: 2.5 Weeks</p>
-                <p><i class="fa-solid fa-screwdriver-wrench"></i> Engine: Unity</p>
-            </div>
-        </div>
-
-        <div class="game-introduction">
-            <h1 class="game-sub-title">Introduction</h1> <!-- Introduction -->
-            <p>
-                In this project I took the responsibility of programming the game's <mark>gameplay</mark> and <mark>artificial intelligence</mark> since that was our second 
-                core mechanic of the game. We use <mark>Perforce</mark> desktop as source control, <mark>Miro</mark> for prototyping, <mark>Jira</mark> for project management. 
-                I mainly put lot of focus on AI but I also worked making the cave shrink, health, and <mark>UI</mark>. 
-                I also wanted to get a better understanding of unity AI since it was my first time using it.
-            </p>
-            <h1 class="game-sub-title">Gameplay</h1> <!-- Gameplay -->
-            <div class="game-grid-container">
-                <p>
-                    Health and <mark>UI</mark> was basic, whenever the player was taking damage I had a collider function on the enemies when they were in attacking 
-                    state and collided with the player. 
-                    <br><br>
-                    The <mark>game manager</mark> was used for knowing when the round was over. there were 2 turns, one for the when the enemies were spawning in and the cave shrinking
-                    and one for where the player could get ready for the next wave after defeating all the enemies in the previous round.
-                </p>
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <img id="slide-1" src="../images/CodeSnippet/WrathfulHedgehog/healthScript.png">
-                        <img id="slide-2" src="../images/CodeSnippet/WrathfulHedgehog/ShrinkWaveScript.png">
-                    </div>
-                    <div class="slider-nav">
-                        <a href="#slide-1"></a>
-                        <a href="#slide-2"></a>
-                    </div>
-                </div>
-            </div>
-            <h1 class="game-sub-title">Artificial Intelligence</h1> <!-- Artificial Intelligence -->
-            <div class="game-grid-container">
-                <p>
-                    This was my first time doing any artificial intelligence, therefore nothing too complicated was made in this project. 
-                    <br><br>
-                    I installed Unity's AI Navigation to utilize a <mark>NavMesh</mark> for ground surface navigation and a <mark>NavMeshAgent</mark> for enemy 
-                    pathfinding, enabling them to navigate around obstacles.
-                    <br><br>
-                    I also implemented the enemy spawner, which communicates with the game manager to determine when and how many enemies to spawn. 
-                    The enemy script handles their individual behaviors, including health management, movement, attacking, and targeting the player.
-                </p>
-                <div class="slider-wrapper">
-                    <div class="slider">
-                        <img id="slide-3" src="../images/CodeSnippet/WrathfulHedgehog/EnemySpawnerScript1.png">
-                        <img id="slide-4" src="../images/CodeSnippet/WrathfulHedgehog/EnemySpawnerScript2.png">
-                        <img id="slide-5" src="../images/CodeSnippet/WrathfulHedgehog/EnemySpawnerScript3.png">
-                        <img id="slide-6" src="../images/CodeSnippet/WrathfulHedgehog/EnemyScript.png">
-                        <img id="slide-7" src="../images/CodeSnippet/WrathfulHedgehog/EnemyNavigationScript.png">
-                    </div>
-                    <div class="slider-nav">
-                        <a href="#slide-3"></a>
-                        <a href="#slide-4"></a>
-                        <a href="#slide-5"></a>
-                        <a href="#slide-6"></a>
-                        <a href="#slide-7"></a>
-                    </div>
-                </div>
-            </div>
-            <h1 class="game-sub-title">What I learned</h1> <!-- What I Learned -->
-            <p>
-                Working on this project with someone other than myself taught me a lot. I learned that it is important to not assume things, 
-                even if it seems obvious to you. After the project we also did code reviews, which was 
-                really educational for me to see another persons coding style when it comes to game development.
-                <br><br>
-                Download and Play Wrathful Hedgehog on <a href="https://futuregames.itch.io/wrathful-hedgehog" target="_blank">itch.io <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-            </p>
-        </div>
+  <header class="topbar">
+    <a class="logo" href="../index.html">Sinan Koc</a>
+    <div class="header__right">
+      <nav class="nav" aria-label="Project navigation">
+        <a href="../index.html#work">Back</a>
+      </nav>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+        <span aria-hidden="true">&#9790;</span>
+      </button>
     </div>
-</Section>
+  </header>
 
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="label">Futuregames / Unity / AI & Gameplay</p>
+        <h1>Wrathful Hedgehog</h1>
+        <p>
+          A first-person horde shooter about defending your home from foxes. I worked on enemy AI, wave flow, health, UI, and cave pressure.
+        </p>
+        <div class="actions">
+          <a class="button primary" href="https://futuregames.itch.io/wrathful-hedgehog" target="_blank" rel="noreferrer">Play on itch.io</a>
+          <a class="button" href="#work">My work</a>
+        </div>
+      </div>
 
-<div class="copyright">
-    <p><i class="fa-regular fa-copyright"></i> 2024 Sinan Koc. <br>Made with Visual Studio Code and Github Domain</p>
-</div>
+      <div class="hero-media">
+        <video autoplay loop muted playsinline>
+          <source src="../Videos/WrathfulHedgehogVideo.mp4" type="video/mp4">
+        </video>
+      </div>
+    </section>
 
-<script src="script.js"></script>
+    <section class="facts" aria-label="Project facts">
+      <div class="fact"><span>Role</span><strong>AI & Gameplay</strong></div>
+      <div class="fact"><span>Team</span><strong>14 people</strong></div>
+      <div class="fact"><span>Time</span><strong>2.5 weeks</strong></div>
+      <div class="fact"><span>Engine</span><strong>Unity</strong></div>
+    </section>
+
+    <section id="work" class="section">
+
+      <div class="case-study">
+        <article class="case-block">
+          <p class="label">My work</p>
+          <h3>Introduction</h3>
+          <p>
+            I was responsible for the game's <mark>gameplay</mark> and <mark>enemy AI</mark>. The goal was to make a simple horde shooter loop work clearly: enemies spawn, chase the player, attack, and give the player enough time to prepare for the next wave.
+          </p>
+          <p>
+            I worked with <mark>Perforce</mark>, <mark>Miro</mark>, and <mark>Jira</mark> in a 14-person Futuregames team.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>Gameplay</h3>
+          <p>
+            I worked on player <mark>health</mark>, basic <mark>UI feedback</mark>, and the systems around each round. When enemies reached the player in their attack state, they could deal damage through collision checks.
+          </p>
+          <p>
+            The <mark>game manager</mark> controlled the round flow. One phase spawned enemies and applied pressure through the shrinking cave, while the next gave the player time to recover before another wave started.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>Artificial Intelligence</h3>
+          <p>
+            This was my first time working with AI in Unity. I used <mark>Unity AI Navigation</mark>, <mark>NavMesh</mark>, and <mark>NavMeshAgent</mark> so enemies could path toward the player and move around the cave.
+          </p>
+          <p>
+            I also implemented the <mark>enemy spawner</mark>. It communicated with the game manager to know when to spawn enemies and how many should appear during a wave.
+          </p>
+        </article>
+
+        <article class="case-block">
+          <h3>What I learned</h3>
+          <p>
+            This project taught me how important it is to test AI constantly in the editor. Small changes to movement, attack range, or spawn timing can quickly change the feel of the whole game.
+          </p>
+          <p>
+            It also taught me to ask questions early instead of assuming everyone understands a feature the same way. Code reviews helped me see different ways to structure gameplay logic.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>Copyright 2026 Sinan Koc</p>
+  </footer>
+  <script src="project-theme.js"></script>
 </body>
 </html>
