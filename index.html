@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- ==================== HEADER / NAVIGATION ==================== -->
   <header class="header">
     <a class="logo" href="#top">Sinan Koc</a>
     <div class="header__right">
@@ -30,8 +31,10 @@
       </button>
     </div>
   </header>
+  <!-- ================== END HEADER / NAVIGATION ================== -->
 
   <main id="top">
+    <!-- ======================== ABOUT / HERO ======================== -->
     <section class="hero section">
       <div class="hero__content">
         <p class="label">About</p>
@@ -66,7 +69,9 @@
         </div>
       </aside>
     </section>
+    <!-- ====================== END ABOUT / HERO ====================== -->
 
+    <!-- =========================== WORK ============================= -->
     <section id="work" class="section">
       <div class="section__head">
         <div>
@@ -191,7 +196,9 @@
         </article>
       </div>
     </section>
+    <!-- ========================= END WORK =========================== -->
 
+    <!-- ================= HIDDEN SYSTEMS & CODE ====================== -->
     <section id="samples" class="section" hidden>
       <div class="section__head">
         <div>
@@ -256,7 +263,9 @@
         </article>
       </div>
     </section>
+    <!-- =============== END HIDDEN SYSTEMS & CODE ==================== -->
 
+    <!-- ======================== EXPERIENCE ========================== -->
     <section id="experience" class="section two-column">
       <div class="section__head sticky">
         <p class="label">Background</p>
@@ -296,7 +305,9 @@
         </article>
       </div>
     </section>
+    <!-- ====================== END EXPERIENCE ======================== -->
 
+    <!-- ========================== SKILLS ============================ -->
     <section id="skills" class="section">
       <div class="section__head">
         <p class="label">Toolkit</p>
@@ -332,6 +343,8 @@
             <span>HTML</span>
             <span>JavaScript</span>
             <span>CSS</span>
+            <span>React</span>
+            <span>Next.js</span>
             <span>Git</span>
             <span>Notion</span>
             <span>FMOD</span>
@@ -339,7 +352,9 @@
         </div>
       </div>
     </section>
+    <!-- ======================== END SKILLS ========================== -->
 
+    <!-- ========================= SOCIALS ============================ -->
     <section id="contact" class="section contact">
       <p class="label">Socials</p>
       <h2>Find me online</h2>
@@ -388,11 +403,16 @@
         </a>
       </div>
     </section>
+    <!-- ======================= END SOCIALS ========================== -->
   </main>
 
+  <!-- ========================== FOOTER ============================= -->
   <footer class="footer">
     <p>Copyright 2026 Sinan Koc</p>
   </footer>
+  <!-- ======================== END FOOTER ============================ -->
+
+  <!-- ================= THEME & NAVIGATION SCRIPT ==================== -->
   <script>
     const themeToggle = document.getElementById("theme-toggle");
     const themeIcon = themeToggle.querySelector("span");
@@ -464,6 +484,7 @@
     window.addEventListener("scroll", setActiveNav, { passive: true });
     window.addEventListener("resize", setActiveNav);
   </script>
+  <!-- =============== END THEME & NAVIGATION SCRIPT ================== -->
 </body>
 </html>
 
